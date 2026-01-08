@@ -1,0 +1,42 @@
+/* Sport Store Styles */
+:root {
+    --sport-red: #ff3b3b;
+    --sport-orange: #ff6b35;
+    --sport-dark: #0d0d0d;
+}
+
+.sport-page { background: var(--sport-dark); }
+.sport-logo { font-weight: 800 !important; letter-spacing: 4px !important; }
+
+/* Hero */
+.sport-hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; text-align: center; overflow: hidden; }
+.sport-hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 70%, rgba(255, 59, 59, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 30%, rgba(255, 107, 53, 0.1) 0%, transparent 50%), var(--sport-dark); z-index: 0; }
+.sport-hero-content { position: relative; z-index: 1; padding: 20px; }
+.sport-label { display: inline-block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: var(--sport-red); margin-bottom: 32px; padding: 10px 24px; border: 1px solid var(--sport-red); }
+.sport-hero h1 { font-size: clamp(48px, 14vw, 140px); font-weight: 900; line-height: 0.9; text-transform: uppercase; color: var(--white); margin-bottom: 24px; }
+.sport-hero p { font-size: 12px; letter-spacing: 3px; color: var(--gray-500); text-transform: uppercase; }
+
+/* Gender Selection */
+.sport-gender { padding: 80px 0; }
+.sport-gender-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.sport-gender-card { position: relative; aspect-ratio: 3/4; overflow: hidden; border-radius: 12px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 40px; }
+.sport-gender-bg { position: absolute; inset: 0; z-index: 0; transition: transform 0.5s ease; }
+.sport-gender-bg.men-bg { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+.sport-gender-bg.women-bg { background: linear-gradient(135deg, #2e1a1a 0%, #3e1621 100%); }
+.sport-gender-card:hover .sport-gender-bg { transform: scale(1.05); }
+.sport-gender-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; transition: transform 0.5s ease; }
+.sport-gender-card:hover .sport-gender-img { transform: scale(1.02); }
+.sport-gender-label { position: relative; z-index: 2; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--white); padding: 12px 24px; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 6px; }
+
+/* Combined */
+.sport-combined { padding: 60px 0; text-align: center; }
+.sport-combined-img { max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 40px; }
+.sport-combined-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.btn-sport { padding: 14px 32px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--white); background: transparent; border: 1px solid var(--white); border-radius: 6px; transition: var(--transition-fast); }
+.btn-sport:hover { background: var(--sport-red); border-color: var(--sport-red); }
+
+@media (max-width: 768px) {
+    .sport-gender-grid { grid-template-columns: 1fr; }
+    .sport-gender-card { aspect-ratio: 4/5; }
+    .sport-combined-btns { flex-direction: column; align-items: center; }
+}

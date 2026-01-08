@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer - VITON13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/designer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">V13 <span class="logo-sub">VITON13 Design</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#top" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#cases" class="nav-link" data-i18n="designer.cases">Кейсы</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link" data-i18n="designer.contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="lang-switch" id="langSwitch">EN</a>
+            </div>
+            <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-section">
+            <a href="index.html" data-i18n="nav.backHome">← На главную</a>
+            <a href="#cases" data-i18n="designer.cases">Кейсы</a>
+            <a href="#contacts" data-i18n="designer.contacts">Контакты</a>
+        </div>
+    </div>
+
+    <section class="designer-hero" id="top">
+        <div class="designer-hero-content">
+            <span class="designer-label">VITON13 • DESIGN</span>
+            <span class="designer-tag">DESIGN</span>
+            <h1 data-i18n="designer.heroTitle">Графический дизайнер VITON13</h1>
+            <div class="designer-hero-btns">
+                <button class="btn-primary" onclick="document.getElementById('calcModal').classList.add('active')" data-i18n="designer.calculate">Рассчитать стоимость</button>
+                <a href="#cases" class="btn-secondary" data-i18n="designer.portfolio">Портфолио</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer-cases" id="cases">
+        <div class="container">
+            <div class="cases-gallery">
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild6233-3633-4334-b664-633866346538/unio-1.png" alt="Case"></a>
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild6264-3364-4864-b962-383866363934/unio-9.png" alt="Case"></a>
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild6531-3263-4665-b465-306134303933/unio-5.png" alt="Case"></a>
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild3830-6536-4362-b139-346638313235/unio-10.png" alt="Case"></a>
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild6339-3732-4934-b866-633334303962/unio-13.png" alt="Case"></a>
+                <a href="https://t.me/unio_dsgn" target="_blank" class="case-item"><img src="https://static.tildacdn.com/tild3230-3534-4234-b138-656565326135/photo_51905913763776.jpg" alt="Case"></a>
+            </div>
+            <div class="cases-footer">
+                <a href="https://t.me/unio_dsgn" target="_blank" class="btn-secondary" data-i18n="designer.viewAllCases">Смотреть все кейсы</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer-cases-info">
+        <div class="container">
+            <div class="cases-info-content">
+                <span class="designer-label" data-i18n="designer.casesTitle">Кейсы работ</span>
+                <h2 data-i18n="designer.casesSubtitle">Минимализм. Сетка. Дорого.</h2>
+                <p data-i18n="designer.casesDesc">Подборка выполненных проектов — открой Telegram и листай работы.</p>
+                <div class="cases-info-btns">
+                    <a href="https://t.me/unio_dsgn" target="_blank" class="btn-primary" data-i18n="designer.viewCases">Посмотреть кейсы работ</a>
+                    <a href="https://t.me/unio_dsgn" target="_blank" class="btn-secondary" data-i18n="designer.openTelegram">Открыть Telegram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer-about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://static.tildacdn.com/tild6437-3135-4435-b661-326538663065/IMG_1244.jpeg" alt="Настя">
+                </div>
+                <div class="about-content">
+                    <span class="designer-label">VITON13 • Lead Designer</span>
+                    <h2 data-i18n="designer.aboutName">Настя — главный дизайнер корпорации VITON13</h2>
+                    <p data-i18n="designer.aboutDesc">Настя отвечает за визуальный стандарт VITON13: сетки, типографику, бренд-системы и digital-продукты уровня "премиум". Её подход жёсткий: меньше "красиво", больше смысла, структуры и результата.</p>
+                    <div class="about-btns">
+                        <a href="https://t.me/unio_dsgn" target="_blank" class="btn-secondary" data-i18n="designer.openTelegram">Открыть Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer-contacts" id="contacts">
+        <div class="container">
+            <span class="designer-label" data-i18n="designer.contacts">Контакты</span>
+            <h2 data-i18n="designer.contactTitle">Связаться с дизайнером VITON13</h2>
+            <p data-i18n="designer.contactSubtitle">Быстро. По делу. Без лишних слов.</p>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <span class="contact-label" data-i18n="designer.phoneLabel">Телефон</span>
+                    <a href="tel:+79009486687" class="contact-value">+7 (900) 948-66-87</a>
+                    <a href="tel:+79009486687" class="btn-secondary" data-i18n="designer.call">Позвонить</a>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-label" data-i18n="designer.companyEmail">Почта компании</span>
+                    <a href="mailto:viton13bussiness@gmail.com" class="contact-value">viton13bussiness@gmail.com</a>
+                    <a href="mailto:viton13bussiness@gmail.com" class="btn-secondary" data-i18n="designer.write">Написать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-legal">
+                <p data-i18n="footer.copyright">Авторские права © VITON13 Inc. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="legal.html">Юридическая информация</a>
+                    <a href="returns.html">Продажи и возврат</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calculator Modal -->
+    <div class="modal" id="calcModal">
+        <div class="modal-overlay" onclick="this.parentElement.classList.remove('active')"></div>
+        <div class="modal-content modal-large">
+            <button class="modal-close" onclick="this.closest('.modal').classList.remove('active')">×</button>
+            <div class="calc-header">
+                <h3 data-i18n="designer.calculate">Рассчитать стоимость</h3>
+                <p data-i18n="designer.calcTitle">7 шагов • ~60 секунд</p>
+            </div>
+            <form class="calc-form" id="calcForm">
+                <div class="calc-step active">
+                    <h4 data-i18n="designer.step1">1) Что нужно сделать?</h4>
+                    <div class="calc-options">
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="logo"> <span>Логотип и нейминг</span></label>
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="identity"> <span>Фирменный стиль</span></label>
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="smm"> <span>SMM-дизайн</span></label>
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="uiux"> <span>UI/UX дизайн</span></label>
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="presentations"> <span>Презентации</span></label>
+                        <label class="calc-checkbox"><input type="checkbox" name="service" value="print"> <span>Полиграфия</span></label>
+                    </div>
+                    <div class="form-group" style="margin-top: 24px;">
+                        <input type="text" name="name" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="contact" placeholder="Email или Telegram" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="comment" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Отправить запрос</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

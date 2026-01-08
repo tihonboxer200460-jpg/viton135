@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Center - VITON13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/education.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">V13 <span class="logo-sub">VITON13 EDUCATION</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#top" class="nav-link" data-i18n="education.home">Главная</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link" data-i18n="education.programs">Программы</a></li>
+                <li class="nav-item"><a href="#apply" class="nav-link" data-i18n="education.admission">Поступление</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-i18n="education.aboutSchool">О школе</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-i18n="education.news">Новости</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-i18n="education.contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="lang-switch" id="langSwitch">EN</a>
+                <a href="#" class="nav-link-icon">⌕</a>
+                <button class="nav-menu-toggle">Меню</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-section">
+            <a href="index.html" data-i18n="nav.backHome">← На главную</a>
+        </div>
+        <div class="mobile-menu-section">
+            <a href="#top" data-i18n="education.home">Главная</a>
+            <a href="#products" data-i18n="education.programs">Программы</a>
+            <a href="#products" data-i18n="education_menu.tools">Инструменты</a>
+            <a href="#apply" data-i18n="education.admission">Поступление</a>
+            <a href="#" data-i18n="education.aboutSchool">О школе</a>
+            <a href="#" data-i18n="education.news">Новости</a>
+            <a href="#" data-i18n="education.contacts">Контакты</a>
+        </div>
+        <div class="mobile-menu-section">
+            <a href="#" data-i18n="education.faq">FAQ</a>
+            <a href="#" data-i18n="education.schedule">Расписание</a>
+            <a href="#apply" data-i18n="education.applyNow">Подать заявку</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="edu-hero" id="top">
+        <div class="edu-hero-content">
+            <span class="edu-label">ОБРАЗОВАНИЕ VITON13</span>
+            <h1 data-i18n="education.heroTitle">2026<br>центр образование</h1>
+            <p class="edu-tagline" data-i18n="education.tagline">Минимализм • Дисциплина • Навыки 2026</p>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section class="edu-apply" id="apply">
+        <div class="container">
+            <div class="edu-apply-header">
+                <span class="edu-section-label">V13 VITON13 EDUCATION</span>
+                <h2 data-i18n="education.applyTitle">Подать заявку</h2>
+                <p data-i18n="education.applyDesc">Вступление — по отбору. Обучение бесплатное. Требования к дисциплине и качеству — максимальные.</p>
+                <a href="#" class="edu-rules-link" data-i18n="education.reviewRules">Ознакомиться с правилами</a>
+            </div>
+
+            <form class="edu-form" id="applicationForm">
+                <!-- Step 1 -->
+                <div class="edu-form-step active" data-step="1">
+                    <div class="edu-step-header">
+                        <span class="edu-step-indicator">1 2 3</span>
+                        <h3 data-i18n="education.step1">Шаг 1 — данные</h3>
+                        <p data-i18n="education.step1Note">Заполни честно. Фейк/пустота = отказ.</p>
+                    </div>
+
+                    <div class="edu-form-section">
+                        <div class="edu-form-section-header">
+                            <h4 data-i18n="education.personalData">Личные данные</h4>
+                            <span data-i18n="education.personalDataNote">Только реальные данные. Мы связываемся вручную.</span>
+                        </div>
+                        <div class="edu-form-grid">
+                            <div class="form-group">
+                                <input type="text" name="firstName" required data-i18n-placeholder="education.firstName">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastName" required data-i18n-placeholder="education.lastName">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" required data-i18n-placeholder="education.phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" required data-i18n-placeholder="education.email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="country" required data-i18n-placeholder="education.country">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="city" required data-i18n-placeholder="education.city">
+                            </div>
+                        </div>
+
+                        <div class="edu-photo-upload">
+                            <label class="edu-photo-label">
+                                <span data-i18n="education.photo">Фото (обязательно)</span>
+                                <input type="file" name="photo" accept="image/*" required>
+                                <span class="edu-photo-hint" data-i18n="education.photoHint">Только ваше фото. JPG/PNG/WebP. До 10MB.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="acceptRules" required>
+                            <label for="acceptRules" data-i18n="education.acceptRules">Я ознакомился(лась) с правилами на отдельной странице и принимаю их.</label>
+                        </div>
+                    </div>
+
+                    <div class="edu-form-section">
+                        <div class="edu-form-section-header">
+                            <h4 data-i18n="education.essay">Сочинение о себе</h4>
+                            <span data-i18n="education.essayNote">Минимум 700 символов. Конкретика. Без воды.</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="essay" rows="8" required minlength="700" data-count="charCount"></textarea>
+                            <div class="edu-char-counter">
+                                <span data-i18n="education.characters">Символов:</span> <strong id="charCount">0</strong> / 700+ • <span data-i18n="education.essayHint">Пиши как на серьёзный отбор.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edu-form-section">
+                        <div class="edu-form-section-header">
+                            <h4 data-i18n="education.interview">Онлайн-собеседование</h4>
+                            <span data-i18n="education.interviewNote">Выбери время. Мы подтвердим по контактам.</span>
+                        </div>
+                        <div class="edu-form-grid">
+                            <div class="form-group">
+                                <input type="date" name="interviewDate" required>
+                                <label data-i18n="education.preferredDate">Желаемая дата</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" name="interviewTime" required>
+                                <label data-i18n="education.preferredTime">Желаемое время</label>
+                            </div>
+                            <div class="form-group">
+                                <select name="platform" required>
+                                    <option value="" data-i18n="education.selectPlatform">Выбери</option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="zoom">Zoom</option>
+                                    <option value="google-meet">Google Meet</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                </select>
+                                <label data-i18n="education.platform">Платформа</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="contactLink" required data-i18n-placeholder="education.contactLink">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edu-form-section">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="confirm1" required>
+                            <label for="confirm1" data-i18n="education.confirm1">Подтверждаю: подаю заявку серьёзно и готов(а) работать.</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="confirm2" required>
+                            <label for="confirm2" data-i18n="education.confirm2">Подтверждаю: данные правдивы. Ложь = отказ.</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="confirm3" required>
+                            <label for="confirm3" data-i18n="education.confirm3">Понимаю: обучение бесплатное, но требования к дисциплине и качеству высокие.</label>
+                        </div>
+                    </div>
+
+                    <div class="edu-form-footer">
+                        <p data-i18n="education.checkBefore">Перед отправкой проверь всё. Пустые заявки не рассматриваются.</p>
+                        <button type="submit" class="btn-primary" data-i18n="education.submit">Отправить заявку</button>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                <div class="edu-form-success" id="formSuccess" style="display: none;">
+                    <h3 data-i18n="education.submitted">Заявка отправлена</h3>
+                    <p data-i18n="education.submittedDesc">Мы получили анкету. Дальше — подтверждение собеседования по твоим контактам.</p>
+                    <button type="button" class="btn-secondary" onclick="resetForm()" data-i18n="education.submitAnother">Отправить ещё одну</button>
+                    <a href="#top" data-i18n="education.toTop">Наверх</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="edu-products" id="products">
+        <div class="container">
+            <div class="edu-products-header">
+                <span class="edu-section-label">VITON13 EDUCATION</span>
+                <h2 data-i18n="education.productsTitle">Продукты центра</h2>
+                <p data-i18n="education.productsDesc">Минималистичные инструменты для денег, задач и обучения. Покупка — через заявку (на почту).</p>
+            </div>
+
+            <div class="edu-products-grid">
+                <div class="edu-product-card">
+                    <div class="edu-product-image">
+                        <img src="https://static.tildacdn.com/tild3562-3563-4862-a561-313462303734/photo_52671984746571.jpg" alt="Excel Planner">
+                    </div>
+                    <div class="edu-product-content">
+                        <h3 data-i18n="education.excelTitle">Excel: финансовый планнер + планнер задач</h3>
+                        <p data-i18n="education.excelDesc">2 таблицы в одном стиле VITON13. Учёт бюджета + ежедневная продуктивность.</p>
+                        <div class="edu-product-price">
+                            <span><span data-i18n="education.from">от</span> 313 ₽</span>
+                            <span class="edu-product-package"><span data-i18n="education.package">Пакет:</span> 513 ₽</span>
+                        </div>
+                        <div class="edu-product-actions">
+                            <button class="btn-primary" data-i18n="education.buyOpen">Купить / открыть</button>
+                            <button class="btn-secondary" data-i18n="education.view">Посмотреть</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-product-card">
+                    <div class="edu-product-image">
+                        <img src="https://static.tildacdn.com/tild3564-3931-4137-b966-353533356539/large-vecteezy_focus.jpg" alt="Courses">
+                        <span class="edu-product-badge">COURSES</span>
+                    </div>
+                    <div class="edu-product-content">
+                        <h3 data-i18n="education.coursesTitle">Курсы VITON13 EDUCATION</h3>
+                        <p data-i18n="education.coursesDesc">Стоимость зависит от курса/потока — уточни цену и программу, мы ответим вручную.</p>
+                        <div class="edu-product-price">
+                            <span data-i18n="education.priceOnRequest">Цена уточняется</span>
+                            <span class="edu-product-package" data-i18n="education.responseEmail">Ответ на почту</span>
+                        </div>
+                        <div class="edu-product-actions">
+                            <button class="btn-primary" data-i18n="education.inquirePrice">Уточнить цену</button>
+                            <button class="btn-secondary" data-i18n="education.learnMore">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer.shopLearn">Покупайте и учитесь</h4>
+                    <ul>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="oldmoney.html">Old Money магазин одежды</a></li>
+                        <li><a href="sport.html">Спортивный магазин одежды</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.wallet">VITON Wallet</h4>
+                    <ul>
+                        <li><a href="#">Кошелёк</a></li>
+                        <li><a href="#">VITON Pay</a></li>
+                        <li><a href="#">VITON Cash</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.account">Учётная запись</h4>
+                    <ul>
+                        <li><a href="#">Управление аккаунтом VITON</a></li>
+                        <li><a href="login.html">VITON ID</a></li>
+                        <li><a href="#">VITON Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.vitonStore">VITON Store</h4>
+                    <ul>
+                        <li><a href="#">Найти магазин</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                        <li><a href="#">Статус заказа</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.aboutViton">О VITON13</h4>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.otherWays">Другие способы совершения покупок: найдите ближайший магазин или напишите нам.</p>
+                <p><span data-i18n="footer.orCall">Или позвоните по номеру:</span> <a href="tel:+79811078251">+7 981 107 82 51</a></p>
+            </div>
+            <div class="footer-legal">
+                <p data-i18n="footer.copyright">Авторские права © VITON13 Inc. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="returns.html">Продажи и возврат средств</a>
+                    <a href="legal.html">Юридическая информация</a>
+                </div>
+                <p class="footer-country" data-i18n="footer.country">Россия</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Character counter
+        document.querySelector('textarea[name="essay"]')?.addEventListener('input', function() {
+            document.getElementById('charCount').textContent = this.value.length;
+        });
+
+        // Form submission
+        document.getElementById('applicationForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.querySelector('.edu-form-step').style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+        });
+
+        function resetForm() {
+            document.getElementById('applicationForm').reset();
+            document.getElementById('charCount').textContent = '0';
+            document.querySelector('.edu-form-step').style.display = 'block';
+            document.getElementById('formSuccess').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

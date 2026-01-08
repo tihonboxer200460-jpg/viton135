@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка - VITON13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/support.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VITON13</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Магазин</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Поддержка</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="lang-switch" id="langSwitch">EN</a>
+                <a href="login.html" class="nav-cta" data-i18n="nav.vitonId">VITON ID</a>
+            </div>
+            <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-section">
+            <a href="index.html" data-i18n="nav.backHome">← На главную</a>
+            <a href="login.html" data-i18n="nav.vitonId">VITON ID</a>
+        </div>
+    </div>
+
+    <section class="support-hero">
+        <div class="container">
+            <h1 data-i18n="supportPage.title">Поддержка VITON13</h1>
+            <p class="support-subtitle" data-i18n="supportPage.subtitle">Мы всегда рядом.</p>
+            <p data-i18n="supportPage.desc">Наша команда работает 24/7, чтобы вы чувствовали уверенность в каждом шаге: покупки, использовании сервисов, работе аукциона или взаимодействии с продуктами VITON13.</p>
+            <p class="support-tagline" data-i18n="supportPage.helpClick">Помощь — одним нажатием.</p>
+        </div>
+    </section>
+
+    <section class="support-categories">
+        <div class="container">
+            <h2 data-i18n="supportPage.selectCategory">Выберите категорию обращения.</h2>
+            <div class="support-grid">
+                <div class="support-card" data-modal="serviceModal">
+                    <div class="support-icon">🛎️</div>
+                    <h3 data-i18n="supportPage.serviceSupport">Поддержка услуг</h3>
+                </div>
+                <div class="support-card" data-modal="productModal">
+                    <div class="support-icon">📦</div>
+                    <h3 data-i18n="supportPage.productSupport">Поддержка с продуктом</h3>
+                </div>
+                <div class="support-card" data-modal="oivaModal">
+                    <div class="support-icon">🚚</div>
+                    <h3 data-i18n="supportPage.oivaSupport">Поддержка OIVA</h3>
+                </div>
+                <div class="support-card" data-modal="auctionModal">
+                    <div class="support-icon">🎯</div>
+                    <h3 data-i18n="supportPage.auctionSupport">Поддержка с аукционом</h3>
+                </div>
+                <div class="support-card" data-modal="websiteModal">
+                    <div class="support-icon">🌐</div>
+                    <h3 data-i18n="supportPage.websiteSupport">Поддержка с ошибками сайта</h3>
+                </div>
+                <div class="support-card" data-modal="generalModal">
+                    <div class="support-icon">💬</div>
+                    <h3 data-i18n="supportPage.generalSupport">Поддержка общая</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-contact">
+        <div class="container">
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="support-help-btn">
+                <span data-i18n="supportPage.help">Помощь</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>© 2026 VITON13</p>
+                <div class="footer-links">
+                    <a href="privacy.html" data-i18n="support_menu.privacy">Политика конфиденциальности</a>
+                    <a href="legal.html" data-i18n="support_menu.legal">Юридическая информация</a>
+                    <a href="returns.html" data-i18n="support_menu.returns">Возврат и продажи</a>
+                    <a href="support.html" data-i18n="nav.support">Поддержка</a>
+                </div>
+                <p>© 2026 VITON13</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for each support category -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.serviceSupport">Поддержка услуг</h3>
+            <p>В VITON13 мы строим свою репутацию на безупречном профессионализме. Обращаясь к нам, вы напрямую связываетесь с одним из наших высококвалифицированных специалистов.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Связаться с VIT</a>
+        </div>
+    </div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.productSupport">Поддержка с продуктом</h3>
+            <p>Мы предлагаем физические товары высочайшего качества. Если у вас вопросы по качеству, доставке или возврату — мы готовы помочь.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Связаться с VIT</a>
+        </div>
+    </div>
+
+    <div class="modal" id="oivaModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.oivaSupport">Поддержка OIVA</h3>
+            <p>Проект OIVA — логистическое направление VITON13. Если у вас вопросы по доставке, свяжитесь с ассистентом VIT.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Связаться с VIT</a>
+        </div>
+    </div>
+
+    <div class="modal" id="auctionModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.auctionSupport">Поддержка с аукционом</h3>
+            <p>Стоимость записи на участие в аукционе — 1300 рублей. Вся сумма будет вычтена из вашей финальной ставки при победе.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Связаться с VIT</a>
+        </div>
+    </div>
+
+    <div class="modal" id="websiteModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.websiteSupport">Поддержка с ошибками сайта</h3>
+            <p>Если сайт не загружается или работает медленно — попробуйте перезагрузить страницу, очистить кэш или открыть в другом браузере.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Сообщить об ошибке</a>
+        </div>
+    </div>
+
+    <div class="modal" id="generalModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3 data-i18n="supportPage.generalSupport">Поддержка общая</h3>
+            <p>Ваш персональный ассистент VIT работает 24/7. Он готов помочь с любыми вопросами — техническими, по заказам, по услугам.</p>
+            <a href="https://t.me/c/2409726857/615" target="_blank" class="btn-primary">Связаться с VIT</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.support-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const modalId = card.dataset.modal;
+                document.getElementById(modalId)?.classList.add('active');
+            });
+        });
+        document.querySelectorAll('.modal-close, .modal-overlay').forEach(el => {
+            el.addEventListener('click', () => {
+                document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+            });
+        });
+    </script>
+</body>
+</html>
