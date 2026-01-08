@@ -1,0 +1,854 @@
+<!--allrecords--> <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="17774146" data-tilda-page-id="107301726" data-tilda-page-alias="v13" data-tilda-formskey="e9ff48f84f843ba50039e3ca17774146" data-tilda-cookie="no" data-tilda-imgoptimoff="yes" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-country="RU"> <!--header--> <header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="17774146" data-tilda-page-id="104688366" data-tilda-page-alias="header" data-tilda-formskey="e9ff48f84f843ba50039e3ca17774146" data-tilda-cookie="no" data-tilda-imgoptimoff="yes" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-country="RU"> <div id="rec1703394941" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ffffff; " data-record-type="113" data-bg-color="#ffffff"> <div style="height:28px;"></div> </div> <div id="rec1750159481" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <style>
+*{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif}
+body{margin:0}
+
+/* ===== HEADER ROOT (scoped) ===== */
+:root{
+  --v13-header-h:70px;
+  --v13-logo-offset:0px;
+  --v13-purple:#7c5cff;
+}
+
+#v13-header-root .v13-header{
+  width:100%;
+  border-bottom:1px solid #eee;
+  background:#fff;
+  position:fixed;
+  top:0;left:0;
+  z-index:9999;
+}
+
+#v13-header-root .v13-inner{
+  max-width:1600px;
+  margin:0 auto;
+  height:var(--v13-header-h);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  padding:0 16px;
+}
+
+#v13-header-root .v13-logo{
+  font-weight:700;
+  margin-right:48px;
+  user-select:none;
+  color:#171a20;
+  text-decoration:none;
+}
+
+#v13-header-root .v13-nav{
+  display:flex;
+  gap:32px;
+}
+
+#v13-header-root .v13-item{
+  cursor:pointer;
+  font-size:15px;
+  user-select:none;
+  color:#171a20;
+}
+
+/* ===== PROFILE (VITON ID) ===== */
+#v13-header-root .v13-profile{
+  position:absolute;
+  right:16px;
+  top:50%;
+  transform:translateY(-50%);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  text-decoration:none;
+  color:var(--v13-purple);
+  cursor:pointer;
+  font-weight:700;
+  padding:8px 14px;
+  border-radius:100px;
+  transition:all 0.3s;
+}
+
+#v13-header-root .v13-profile:hover{
+  background:rgba(124,92,255,0.08);
+}
+
+#v13-header-root .v13-profile svg{width:18px;height:18px;display:block}
+
+#v13-header-root .v13-profile-ava{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#171a20,#c0c0c0,#7c5cff);
+  background-size:200% 200%;
+  animation:v13grad 4s ease infinite;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:600;
+  color:#fff;
+}
+
+#v13-header-root .v13-profile-dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#00d46a;
+  box-shadow:0 0 6px #00d46a;
+}
+
+@keyframes v13grad{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* ===== DESKTOP DROPDOWN ===== */
+#v13-header-root .v13-drop{
+  display:none;
+  width:100vw;
+  padding:40px 0;
+  background:#fff;
+  border-bottom:1px solid #eee;
+  position:fixed;
+  top:var(--v13-header-h);
+  left:0;
+  z-index:9998;
+}
+
+#v13-header-root .v13-drop-inner{
+  width:min(1600px, calc(100% - 32px));
+  margin:0 auto;
+}
+
+#v13-header-root .v13-drop-content{
+  padding-left:var(--v13-logo-offset);
+}
+
+#v13-header-root .v13-drop,
+#v13-header-root .v13-drop *{color:#000 !important}
+
+#v13-header-root .v13-drop small{
+  display:block;
+  margin-bottom:16px;
+  font-size:13px;
+  font-weight:500;
+  color:rgba(0,0,0,.55) !important;
+}
+
+#v13-header-root .v13-drop a{
+  display:block;
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:12px;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#v13-header-root .v13-page-spacer{height:var(--v13-header-h)}
+
+/* ===== MOBILE TOPBAR ===== */
+#v13-header-root .v13-mobile-actions{
+  display:none;
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  align-items:center;
+  gap:10px;
+}
+
+#v13-header-root .v13-mobile-id{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:var(--v13-purple);
+  font-weight:800;
+  font-size:14px;
+  user-select:none;
+}
+
+#v13-header-root .v13-mobile-id svg{width:18px;height:18px;display:block}
+
+#v13-header-root .v13-mobile-id-ava{
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#171a20,#c0c0c0,#7c5cff);
+  background-size:200% 200%;
+  animation:v13grad 4s ease infinite;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+  font-weight:600;
+  color:#fff;
+}
+
+#v13-header-root .v13-mobile-id-dot{
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#00d46a;
+  box-shadow:0 0 5px #00d46a;
+}
+
+#v13-header-root .v13-burger{
+  width:40px;height:40px;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  border-radius:10px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#v13-header-root .v13-burger:active{transform:translateY(1px)}
+
+#v13-header-root .v13-burger i{
+  display:block;
+  width:18px;
+  height:2px;
+  background:#0b0b0f;
+  border-radius:2px;
+  position:relative;
+}
+
+#v13-header-root .v13-burger i:before,
+#v13-header-root .v13-burger i:after{
+  content:"";
+  position:absolute;left:0;
+  width:18px;height:2px;
+  background:#0b0b0f;
+  border-radius:2px;
+}
+
+#v13-header-root .v13-burger i:before{top:-6px}
+#v13-header-root .v13-burger i:after{top:6px}
+
+/* ===== MOBILE OVERLAY MENU ===== */
+#v13-header-root .v13-m-overlay{
+  position:fixed;
+  inset:0;
+  background:#fff;
+  z-index:10000;
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(-10px);
+  transition:opacity .18s ease, transform .22s ease;
+}
+
+#v13-header-root .v13-m-overlay.is-open{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+#v13-header-root .v13-m-top{
+  height:var(--v13-header-h);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 14px;
+  border-bottom:1px solid #eee;
+}
+
+#v13-header-root .v13-m-brand{
+  font-weight:800;
+  letter-spacing:.04em;
+  color:#0b0b0f;
+}
+
+#v13-header-root .v13-m-close{
+  width:44px;height:44px;
+  border:0;background:transparent;
+  cursor:pointer;border-radius:12px;
+  position:relative;
+}
+
+#v13-header-root .v13-m-close:before,
+#v13-header-root .v13-m-close:after{
+  content:"";
+  position:absolute;
+  top:50%;left:50%;
+  width:18px;height:2px;
+  background:#0b0b0f;border-radius:2px;
+  transform-origin:center;
+}
+
+#v13-header-root .v13-m-close:before{transform:translate(-50%,-50%) rotate(45deg)}
+#v13-header-root .v13-m-close:after{transform:translate(-50%,-50%) rotate(-45deg)}
+
+#v13-header-root .v13-m-body{
+  padding:18px 18px 28px;
+  overflow:auto;
+  height:calc(100vh - var(--v13-header-h));
+}
+
+#v13-header-root .v13-m-item{
+  width:100%;
+  border:0;
+  background:transparent;
+  text-align:left;
+  padding:10px 0;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+#v13-header-root .v13-m-item span{
+  font-size:34px;
+  font-weight:900;
+  letter-spacing:-.03em;
+  color:#0b0b0f;
+}
+
+#v13-header-root .v13-m-item em{
+  font-style:normal;
+  color:rgba(0,0,0,.35);
+  font-weight:900;
+  font-size:18px;
+  transform:translateY(2px);
+}
+
+#v13-header-root .v13-m-sub{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .28s ease;
+  padding-left:6px;
+  margin-bottom:8px;
+}
+
+#v13-header-root .v13-m-sub a{
+  display:block;
+  padding:8px 0;
+  text-decoration:none;
+  color:rgba(0,0,0,.72);
+  font-size:16px;
+  font-weight:700;
+}
+
+#v13-header-root .v13-m-sub a:hover{color:#000}
+#v13-header-root .v13-m-sub a.v13-m-accent{color:var(--v13-purple)}
+#v13-header-root .v13-m-sub a.v13-m-accent:hover{opacity:.85}
+
+#v13-header-root .v13-m-quick{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid #eee;
+}
+
+#v13-header-root .v13-m-quick h4{
+  margin:0 0 10px;
+  font-size:13px;
+  color:rgba(0,0,0,.45);
+  letter-spacing:.02em;
+}
+
+#v13-header-root .v13-m-quick a{
+  display:block;
+  padding:10px 0;
+  font-size:16px;
+  font-weight:800;
+  text-decoration:none;
+  color:#0b0b0f;
+}
+
+#v13-header-root .v13-m-quick a:hover{opacity:.85}
+#v13-header-root .v13-m-quick a.v13-m-accent{color:var(--v13-purple)}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px){
+  :root{ --v13-header-h:64px; }
+  #v13-header-root .v13-logo{margin-right:24px}
+  #v13-header-root .v13-nav{gap:18px}
+  #v13-header-root .v13-item{font-size:14px}
+  #v13-header-root .v13-drop{padding:28px 0}
+  #v13-header-root .v13-drop a{font-size:18px}
+}
+
+@media (max-width: 820px){
+  #v13-header-root .v13-inner{
+    justify-content:flex-start;
+  }
+  #v13-header-root .v13-logo{
+    margin-right:0;
+  }
+  #v13-header-root .v13-nav{display:none}
+  #v13-header-root .v13-profile{display:none}
+  #v13-header-root .v13-mobile-actions{display:flex}
+}
+
+@media (max-width: 420px){
+  #v13-header-root .v13-m-item span{font-size:30px}
+}
+</style> <div id="v13-header-root"> <header class="v13-header"> <div class="v13-inner"> <a class="v13-logo" href="/vitongl">VITON13</a> <nav class="v13-nav" aria-label="VITON13 navigation"> <div class="v13-item" data-menu="shop">Магазины</div> <div class="v13-item" data-menu="services">Услуги</div> <div class="v13-item" data-menu="edu">Образование</div> <div class="v13-item" data-menu="music">Музыка</div> <div class="v13-item" data-menu="support">Поддержка</div> </nav> <!-- ПК: профиль справа --> <a class="v13-profile" id="v13ProfileLink" href="/login"> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" id="v13ProfileIcon"> <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Z" stroke="currentColor" stroke-width="1.8"/> <path d="M20 22a8 8 0 1 0-16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/> </svg> <span id="v13ProfileText">VITON ID</span> </a> <!-- MOBILE: VITON ID + Burger --> <div class="v13-mobile-actions" aria-hidden="true"> <a class="v13-mobile-id" id="v13MobileIdLink" href="/login"> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" id="v13MobileIcon"> <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Z" stroke="currentColor" stroke-width="1.8"/> <path d="M20 22a8 8 0 1 0-16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/> </svg> <span id="v13MobileIdText">VITON ID</span> </a> <button class="v13-burger" type="button" id="v13Burger" aria-label="Открыть меню"> <i aria-hidden="true"></i> </button> </div> </div> </header> <div class="v13-page-spacer"></div> <!-- DESKTOP DROPDOWNS --> <div class="v13-dropdown"> <div class="v13-drop" data-drop="shop"> <div class="v13-drop-inner"> <div class="v13-drop-content"> <small>Магазин</small> <a href="/viton13oldmoney">Old Money Магазин одежды</a> <a href="/sportv13">Спортивный магазин одежды</a> <a href="#">Дизайнерский магазин одежды</a> </div> </div> </div> <div class="v13-drop" data-drop="services"> <div class="v13-drop-inner"> <div class="v13-drop-content"> <small>Услуги</small> <a href="http://viton13.com/designviton13">Дизайнер</a> <a href="#">Стилист</a> <a href="#">Организация праздников</a> <a href="#">SMM специалист</a> <a href="#">Флорист</a> </div> </div> </div> <div class="v13-drop" data-drop="edu"> <div class="v13-drop-inner"> <div class="v13-drop-content"> <small>Образование</small> <a href="http://viton13.com/viton13education">Центр образование</a> <a href="#">Научные открытия</a> </div> </div> </div> <div class="v13-drop" data-drop="music"> <div class="v13-drop-inner"> <div class="v13-drop-content"> <small>Музыка</small> <a href="#">Музыкальный лейбл</a> <a href="#">VIOR7</a> <a href="#">VIORA13</a> </div> </div> </div> <div class="v13-drop" data-drop="support"> <div class="v13-drop-inner"> <div class="v13-drop-content"> <small>Поддержка</small> <a href="http://viton13.com/politicalinfo">Политика конфиденциальности</a> <a href="http://viton13.com/laywerinfo">Юридическая информация</a> <a href="http://viton13.com/salehelp">Возврат и продажи</a> <a href="#">О нас</a> <a href="#">Правила и условия аукциона</a> </div> </div> </div> </div> <!-- MOBILE OVERLAY MENU --> <div class="v13-m-overlay" id="v13MobileMenu" aria-hidden="true"> <div class="v13-m-top"> <div class="v13-m-brand">VITON13</div> <button class="v13-m-close" type="button" id="v13MobileClose" aria-label="Закрыть меню"></button> </div> <div class="v13-m-body"> <button class="v13-m-item" type="button" data-acc="m-shop"><span>Магазины</span><em>+</em></button> <div class="v13-m-sub" id="m-shop"> <a href="/viton13oldmoney">Old Money магазин одежды</a> <a href="/sportv13">Спортивный магазин одежды</a> <a href="#">Дизайнерский магазин одежды</a> </div> <button class="v13-m-item" type="button" data-acc="m-services"><span>Услуги</span><em>+</em></button> <div class="v13-m-sub" id="m-services"> <a href="#">Дизайнер</a> <a href="#">Стилист</a> <a href="#">Организация праздников</a> <a href="#">SMM специалист</a> <a href="#">Флорист</a> </div> <button class="v13-m-item" type="button" data-acc="m-edu"><span>Образование</span><em>+</em></button> <div class="v13-m-sub" id="m-edu"> <a href="#">Инструменты</a> <a href="#">Научные открытия</a> </div> <button class="v13-m-item" type="button" data-acc="m-music"><span>Музыка</span><em>+</em></button> <div class="v13-m-sub" id="m-music"> <a href="#">Музыкальный лейбл</a> <a href="#">VIOR7</a> <a href="#">VIORA13</a> </div> <button class="v13-m-item" type="button" data-acc="m-support"><span>Поддержка</span><em>+</em></button> <div class="v13-m-sub" id="m-support"> <a href="http://viton13.com/politicalinfo">Политика конфиденциальности</a> <a href="http://viton13.com/laywerinfo">Юридическая информация</a> <a href="http://viton13.com/salehelp">Возврат и продажи</a> <a href="#">О нас</a> <a href="#">Правила и условия аукциона</a> </div> <div class="v13-m-quick"> <h4>Quick Links</h4> <a class="v13-m-accent" id="v13MobileQuickId" href="/login">VITON ID</a> <a href="#">Статус заказа</a> <a href="#">Поддержка</a> </div> </div> </div> </div> <script>
+(function(){
+  function init(){
+    var root = document.getElementById('v13-header-root');
+    if(!root) return;
+
+    var items = Array.from(root.querySelectorAll('.v13-item'));
+    var drops = Array.from(root.querySelectorAll('.v13-drop'));
+    var inner = root.querySelector('.v13-inner');
+    var logo = root.querySelector('.v13-logo');
+
+    var burger = document.getElementById('v13Burger');
+    var mobileMenu = document.getElementById('v13MobileMenu');
+    var mobileClose = document.getElementById('v13MobileClose');
+    var accButtons = Array.from(root.querySelectorAll('.v13-m-item'));
+
+    // Auth elements
+    var profileLink = document.getElementById('v13ProfileLink');
+    var profileText = document.getElementById('v13ProfileText');
+    var profileIcon = document.getElementById('v13ProfileIcon');
+    var mobileIdLink = document.getElementById('v13MobileIdLink');
+    var mobileIdText = document.getElementById('v13MobileIdText');
+    var mobileIcon = document.getElementById('v13MobileIcon');
+    var mobileQuickId = document.getElementById('v13MobileQuickId');
+
+    // Check auth and update UI
+    function updateAuthUI(){
+      var session = localStorage.getItem('viton_session');
+      if(session){
+        try{
+          var u = JSON.parse(session);
+          if(u.loggedIn){
+            var vid = u.vitonId || 'VT000000';
+            var letter = u.name ? u.name.charAt(0).toUpperCase() : '?';
+            
+            // Desktop
+            if(profileLink){
+              profileLink.href = '/cabinet';
+              profileLink.innerHTML = '<div class="v13-profile-ava">' + letter + '</div>' +
+                '<span>' + vid + '</span>' +
+                '<div class="v13-profile-dot"></div>';
+            }
+            
+            // Mobile header
+            if(mobileIdLink){
+              mobileIdLink.href = '/cabinet';
+              mobileIdLink.innerHTML = '<div class="v13-mobile-id-ava">' + letter + '</div>' +
+                '<span>' + vid + '</span>' +
+                '<div class="v13-mobile-id-dot"></div>';
+            }
+            
+            // Mobile menu quick link
+            if(mobileQuickId){
+              mobileQuickId.href = '/cabinet';
+              mobileQuickId.textContent = vid;
+            }
+          }
+        }catch(e){}
+      }
+    }
+    updateAuthUI();
+
+    var isMobile = function(){ return window.matchMedia('(max-width: 820px)').matches; };
+
+    function hideAllDrops(){ drops.forEach(function(d){ d.style.display = 'none'; }); }
+    function showDrop(id){
+      hideAllDrops();
+      var target = root.querySelector('[data-drop="' + id + '"]');
+      if(target) target.style.display = 'block';
+    }
+
+    function updateLogoOffset(){
+      if(isMobile()) return;
+      if(!inner || !logo) return;
+      var innerRect = inner.getBoundingClientRect();
+      var logoRect = logo.getBoundingClientRect();
+      var offset = Math.max(0, Math.round(logoRect.left - innerRect.left));
+      document.documentElement.style.setProperty('--v13-logo-offset', offset + 'px');
+    }
+    updateLogoOffset();
+    window.addEventListener('resize', updateLogoOffset);
+
+    items.forEach(function(item){
+      item.addEventListener('mouseenter', function(){
+        if(isMobile()) return;
+        showDrop(item.dataset.menu);
+      });
+
+      item.addEventListener('click', function(e){
+        if(isMobile()) return;
+        var id = item.dataset.menu;
+        var target = root.querySelector('[data-drop="' + id + '"]');
+        var isOpen = target && target.style.display === 'block';
+        if(isOpen) hideAllDrops();
+        else showDrop(id);
+        e.preventDefault();
+      });
+    });
+
+    drops.forEach(function(drop){
+      drop.addEventListener('mouseleave', function(){
+        if(isMobile()) return;
+        drop.style.display = 'none';
+      });
+    });
+
+    document.addEventListener('click', function(e){
+      if(isMobile()) return;
+      var inNav = e.target.closest('#v13-header-root .v13-inner');
+      var inDrop = e.target.closest('#v13-header-root .v13-drop');
+      if(!inNav && !inDrop) hideAllDrops();
+    });
+
+    function openMobile(){
+      if(!mobileMenu) return;
+      mobileMenu.classList.add('is-open');
+      mobileMenu.setAttribute('aria-hidden','false');
+      hideAllDrops();
+    }
+
+    function closeMobile(){
+      if(!mobileMenu) return;
+      mobileMenu.classList.remove('is-open');
+      mobileMenu.setAttribute('aria-hidden','true');
+      root.querySelectorAll('.v13-m-sub').forEach(function(s){ s.style.maxHeight = '0px'; });
+      root.querySelectorAll('.v13-m-item em').forEach(function(em){ em.textContent = '+'; });
+    }
+
+    if(burger) burger.addEventListener('click', openMobile);
+    if(mobileClose) mobileClose.addEventListener('click', closeMobile);
+
+    accButtons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var id = btn.getAttribute('data-acc');
+        var panel = document.getElementById(id);
+        if(!panel) return;
+
+        var opened = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+
+        root.querySelectorAll('.v13-m-sub').forEach(function(s){ s.style.maxHeight = '0px'; });
+        root.querySelectorAll('.v13-m-item em').forEach(function(em){ em.textContent = '+'; });
+
+        if(!opened){
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+          var em = btn.querySelector('em');
+          if(em) em.textContent = '–';
+        }
+      });
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') closeMobile();
+    });
+
+    window.addEventListener('resize', function(){
+      if(!isMobile()) closeMobile();
+    });
+  }
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script> <!-- nominify end --> </div> </div> </div> </div> </header> <!--/header--> <div id="rec1746507091" class="r t-rec" style=" " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec1746507091 .t396__artboard {height:540px;background-color:#fdfcfe;}#rec1746507091 .t396__filter {height:540px;}#rec1746507091 .t396__carrier{height:540px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec1746507091 .t396__artboard,#rec1746507091 .t396__filter,#rec1746507091 .t396__carrier {}#rec1746507091 .t396__filter {}#rec1746507091 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:959px) {#rec1746507091 .t396__artboard,#rec1746507091 .t396__filter,#rec1746507091 .t396__carrier {}#rec1746507091 .t396__filter {}#rec1746507091 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:639px) {#rec1746507091 .t396__artboard,#rec1746507091 .t396__filter,#rec1746507091 .t396__carrier {}#rec1746507091 .t396__filter {}#rec1746507091 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:479px) {#rec1746507091 .t396__artboard,#rec1746507091 .t396__filter,#rec1746507091 .t396__carrier {}#rec1746507091 .t396__filter {}#rec1746507091 .t396__carrier {background-attachment:scroll;}}#rec1746507091 .tn-elem[data-elem-id="1767036669652"]{z-index:3;top:-28px;;left:calc(50% - 600px + 145px);;width:886px;height:auto;}#rec1746507091 .tn-elem[data-elem-id="1767036669652"] .tn-atom{border-radius:0px 0px 0px 0px;background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}#rec1746507091 .tn-elem[data-elem-id="1767036669652"] .tn-atom__img{border-radius:0px 0px 0px 0px;object-position:center center;}@media screen and (max-width:1199px){#rec1746507091 .tn-elem[data-elem-id="1767036669652"]{display:table;top:-25px;;left:calc(50% - 480px + 37px);;height:auto;}}@media screen and (max-width:959px){#rec1746507091 .tn-elem[data-elem-id="1767036669652"]{display:table;top:34px;;left:calc(50% - 320px + -34px);;width:709px;height:auto;}}@media screen and (max-width:639px){#rec1746507091 .tn-elem[data-elem-id="1767036669652"]{display:table;top:83px;;left:calc(50% - 240px + -40px);;width:561px;height:auto;}}@media screen and (max-width:479px){#rec1746507091 .tn-elem[data-elem-id="1767036669652"]{display:table;top:100px;;left:calc(50% - 160px + -86px);;width:481px;height:auto;}}#rec1746507091 .tn-elem[data-elem-id="1767038640623"]{z-index:3;top:530px;;left:calc(50% - 600px + -187px);;width:1600px;height:10px;}#rec1746507091 .tn-elem[data-elem-id="1767038640623"] .tn-atom{border-radius:0px 0px 0px 0px;background-color:#f0f0f0;background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1746507091 .tn-elem[data-elem-id="1767038640623"]{display:table;}}@media screen and (max-width:959px){#rec1746507091 .tn-elem[data-elem-id="1767038640623"]{display:table;}}@media screen and (max-width:639px){#rec1746507091 .tn-elem[data-elem-id="1767038640623"]{display:table;}}@media screen and (max-width:479px){#rec1746507091 .tn-elem[data-elem-id="1767038640623"]{display:table;}}</style> <div class='t396'> <div class="t396__artboard" data-artboard-recid="1746507091" data-artboard-screens="320,480,640,960,1200" data-artboard-height="540" data-artboard-valign="center" data-artboard-upscale="grid"> <div class="t396__carrier" data-artboard-recid="1746507091"></div> <div class="t396__filter" data-artboard-recid="1746507091"></div> <div class='t396__elem tn-elem tn-elem__17465070911767036669652' data-elem-id='1767036669652' data-elem-type='image' data-field-top-value="-28" data-field-left-value="145" data-field-height-value="591" data-field-width-value="886" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-filewidth-value="1536" data-field-fileheight-value="1024" data-field-heightmode-value="hug" data-field-top-res-320-value="100" data-field-left-res-320-value="-86" data-field-height-res-320-value="321" data-field-width-res-320-value="481" data-field-top-res-480-value="83" data-field-left-res-480-value="-40" data-field-height-res-480-value="374" data-field-width-res-480-value="561" data-field-top-res-640-value="34" data-field-left-res-640-value="-34" data-field-height-res-640-value="473" data-field-width-res-640-value="709" data-field-top-res-960-value="-25" data-field-left-res-960-value="37" data-field-height-res-960-value="591"> <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='images/tild6531-6565-4135-b435-343537333666__chatgpt_image_29__20.png'
+src='images/tild6531-6565-4135-b435-343537333666__-__resize__20x__chatgpt_image_29__20.png'
+alt='' imgfield='tn_img_1767036669652'
+/> </div> </div> <div class='t396__elem tn-elem tn-elem__17465070911767038640623' data-elem-id='1767038640623' data-elem-type='shape' data-field-top-value="530" data-field-left-value="-187" data-field-height-value="10" data-field-width-value="1600" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-widthmode-value="fixed"> <div class='tn-atom'> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('1746507091');});});</script> <!-- /T396 --> </div> <div id="rec1750176351" class="r t-rec" style=" " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec1750176351 .t396__artboard {height:631px;background-color:#ffffff;}#rec1750176351 .t396__filter {height:631px;}#rec1750176351 .t396__carrier{height:631px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec1750176351 .t396__artboard,#rec1750176351 .t396__filter,#rec1750176351 .t396__carrier {height:1500px;}#rec1750176351 .t396__filter {}#rec1750176351 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:959px) {#rec1750176351 .t396__artboard,#rec1750176351 .t396__filter,#rec1750176351 .t396__carrier {height:1500px;}#rec1750176351 .t396__filter {}#rec1750176351 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:639px) {#rec1750176351 .t396__artboard,#rec1750176351 .t396__filter,#rec1750176351 .t396__carrier {height:1500px;}#rec1750176351 .t396__filter {}#rec1750176351 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:479px) {#rec1750176351 .t396__artboard,#rec1750176351 .t396__filter,#rec1750176351 .t396__carrier {height:900px;}#rec1750176351 .t396__filter {}#rec1750176351 .t396__carrier {background-attachment:scroll;}}#rec1750176351 .tn-elem[data-elem-id="1767050356858"]{z-index:3;top:0px;;left:calc(50% - 600px + -199px);;width:1600px;height:700px;}#rec1750176351 .tn-elem[data-elem-id="1767050356858"] .tn-atom{background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1750176351 .tn-elem[data-elem-id="1767050356858"]{display:table;top:345px;;left:calc(50% - 480px + -68px);;width:1096px;height:811px;}}@media screen and (max-width:959px){#rec1750176351 .tn-elem[data-elem-id="1767050356858"]{display:table;top:394px;;left:calc(50% - 320px + -56px);;width:753px;height:712px;}}@media screen and (max-width:639px){#rec1750176351 .tn-elem[data-elem-id="1767050356858"]{display:table;top:550px;;left:calc(50% - 240px + -81px);;width:642px;height:401px;}}@media screen and (max-width:479px){#rec1750176351 .tn-elem[data-elem-id="1767050356858"]{display:table;top:53px;;left:calc(50% - 160px + -37px);;width:395px;height:471px;}}</style> <div class='t396'> <div class="t396__artboard" data-artboard-recid="1750176351" data-artboard-screens="320,480,640,960,1200" data-artboard-height="631" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="900" data-artboard-height-res-480="1500" data-artboard-height-res-640="1500" data-artboard-height-res-960="1500"> <div class="t396__carrier" data-artboard-recid="1750176351"></div> <div class="t396__filter" data-artboard-recid="1750176351"></div> <div class='t396__elem tn-elem tn-elem__17501763511767050356858' data-elem-id='1767050356858' data-elem-type='html' data-field-top-value="0" data-field-left-value="-199" data-field-height-value="700" data-field-width-value="1600" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-widthmode-value="fixed" data-field-heightmode-value="fixed" data-field-top-res-320-value="53" data-field-left-res-320-value="-37" data-field-height-res-320-value="471" data-field-width-res-320-value="395" data-field-top-res-480-value="550" data-field-left-res-480-value="-81" data-field-height-res-480-value="401" data-field-width-res-480-value="642" data-field-top-res-640-value="394" data-field-left-res-640-value="-56" data-field-height-res-640-value="712" data-field-width-res-640-value="753" data-field-top-res-960-value="345" data-field-left-res-960-value="-68" data-field-height-res-960-value="811" data-field-width-res-960-value="1096"> <div class='tn-atom tn-atom__html'> <!-- VITON13 • “Digital Crown” Cards (Zero Block ready) --> <div id="v13-crown"> <div class="v13-crown-inner"> <div class="v13-crown-head"> <h2 class="v13-crown-title">Экосистема VITON13</h2> <p class="v13-crown-sub">Прокручивай как Digital Crown</p> </div> <div class="v13-stage"> <div class="v13-glow" aria-hidden="true"></div> <div class="v13-stack" id="v13Stack"> <article class="v13-card" data-key="market"> <div class="v13-card-top"> <h3>VIT Маркет</h3> <span class="v13-tag">товары</span> </div> <p>Маркетплейс одежды и продуктов внутри экосистемы.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="services"> <div class="v13-card-top"> <h3>Услуги</h3> <span class="v13-tag">сервис</span> </div> <p>Премиальные услуги: дизайн, стиль, организация, SMM и другое.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="music"> <div class="v13-card-top"> <h3>Музыка</h3> <span class="v13-tag">лейбл</span> </div> <p>Музыкальное направление и артисты экосистемы VITON13.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="delivery"> <div class="v13-card-top"> <h3>Доставка</h3> <span class="v13-tag">логистика</span> </div> <p>Доставка заказов и сервис поддержки покупок.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="edu"> <div class="v13-card-top"> <h3>Образовательный центр</h3> <span class="v13-tag">обучение</span> </div> <p>Инструменты, знания и развитие — от практики до исследований.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="support"> <div class="v13-card-top"> <h3>Поддержка</h3> <span class="v13-tag">help</span> </div> <p>Помощь, документы, правила, политика и сервисные разделы.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="innovations"> <div class="v13-card-top"> <h3>Инновационные товары</h3> <span class="v13-tag">R&amp;D</span> </div> <p>Устройства и продукты нового поколения. Прототипы и запуск.</p> <button class="v13-btn" type="button">Выбрать</button> </article> <article class="v13-card" data-key="vit"> <div class="v13-card-top"> <h3>Соцсеть VIT</h3> <span class="v13-tag v13-tag-dev">в разработке</span> </div> <p>Социальная сеть и коммуникации внутри VITON13.</p> <button class="v13-btn" type="button">Выбрать</button> </article> </div> <div class="v13-indicator" id="v13Indicator" aria-label="Навигация по карточкам"></div> <!-- ДОБАВИЛ: Управление для сенсора (вверх/вниз) --> <div class="v13-touch-nav" id="v13TouchNav" aria-label="Навигация (сенсор)"> <button class="v13-navbtn" type="button" data-dir="-1" aria-label="Вверх"> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"> <path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> </button> <button class="v13-navbtn" type="button" data-dir="1" aria-label="Вниз"> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"> <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> </button> </div> </div> </div> </div> <style>:root{--v13-black:#0b0b0f;--v13-gray:#6b6b72;--v13-border:rgba(0,0,0,.14);--v13-purple:#2b0f5f;--v13-purple-2:#4b1bb1;--v13-step:118;}#v13-crown{width:100%;background:#ffffff;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;}.v13-crown-inner{max-width:1600px;margin:0 auto;padding:44px 16px 54px;}.v13-crown-head{text-align:center;margin-bottom:18px;}.v13-crown-title{margin:0;font-size:34px;letter-spacing:-.02em;color:#0b0b0f;font-weight:800;}.v13-crown-sub{margin:10px auto 0;max-width:820px;font-size:14px;color:rgba(0,0,0,.55);line-height:1.6;}.v13-stage{position:relative;margin:28px auto 0;height:520px;max-width:980px;perspective:1200px;border-radius:28px;background:#ffffff;}.v13-glow{display:none !important;}.v13-stack{position:relative;height:100%;transform-style:preserve-3d;z-index:1;user-select:none;touch-action:pan-y;}.v13-card{position:absolute;left:50%;top:50%;width:min(720px,calc(100% - 22px));height:170px;transform:translate(-50%,-50%);border-radius:22px;background:#fff;border:1px solid var(--v13-border);box-shadow:0 18px 45px rgba(0,0,0,.10);padding:22px 22px 18px;display:flex;flex-direction:column;justify-content:space-between;will-change:transform,opacity,filter,box-shadow,border-color;backface-visibility:hidden;}.v13-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;}.v13-card h3{margin:0;font-size:18px;letter-spacing:-.01em;color:var(--v13-black);font-weight:800;}.v13-tag{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.12);color:rgba(0,0,0,.72);background:rgba(0,0,0,.02);white-space:nowrap;}.v13-tag-dev{border-color:rgba(75,27,177,.28);color:rgba(75,27,177,.95);background:rgba(75,27,177,.06);}.v13-card p{margin:10px 0 0;font-size:14px;line-height:1.5;color:rgba(0,0,0,.62);}.v13-btn{margin-top:12px;align-self:flex-start;border-radius:999px;border:1px solid rgba(75,27,177,.55);background:#fff;color:rgba(75,27,177,.95);padding:10px 14px;font-size:13px;font-weight:750;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;position:relative;overflow:hidden;}.v13-btn:before{content:"";position:absolute;inset:-2px;background:linear-gradient(90deg,transparent,rgba(75,27,177,.18),transparent);transform:translateX(-120%);transition:transform .6s ease;pointer-events:none;}.v13-btn:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(75,27,177,.20);border-color:rgba(75,27,177,.85);}.v13-btn:hover:before{transform:translateX(120%);}.v13-card.is-active{border-color:rgba(75,27,177,.60);box-shadow:0 22px 60px rgba(0,0,0,.12),0 0 0 6px rgba(75,27,177,.07);}.v13-indicator{position:absolute;right:-44px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:2;}.v13-dot{width:10px;height:10px;border-radius:999px;border:1px solid rgba(0,0,0,.25);background:#fff;cursor:pointer;transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease;}.v13-dot.active{background:rgba(75,27,177,.95);border-color:rgba(75,27,177,.95);box-shadow:0 0 0 6px rgba(75,27,177,.10);transform:scale(1.06);}@media (max-width:980px){.v13-stage{height:540px;}.v13-indicator{right:10px;}}@media (max-width:640px){.v13-crown-inner{padding:34px 12px 44px;}.v13-crown-title{font-size:26px;}.v13-stage{height:560px;}.v13-card{height:190px;padding:18px 18px 16px;}:root{--v13-step:128;}}@media (max-width:920px) and (orientation:landscape){#v13-crown{--v13-step:96;}#v13-crown .v13-crown-inner{padding:26px 12px 34px;}#v13-crown .v13-stage{height:420px;margin-top:18px;}#v13-crown .v13-card{height:150px;}#v13-crown .v13-indicator{right:10px;}}@media (min-width:641px) and (max-width:1024px) and (orientation:portrait){#v13-crown{--v13-step:112;}#v13-crown .v13-stage{height:560px;}#v13-crown .v13-card{height:175px;}#v13-crown .v13-indicator{right:10px;}}@media (min-width:921px) and (max-width:1180px) and (orientation:landscape){#v13-crown{--v13-step:106;}#v13-crown .v13-stage{height:460px;}#v13-crown .v13-card{height:160px;}#v13-crown .v13-indicator{right:10px;}}@media (max-width:520px){#v13-crown .v13-indicator{right:auto;top:auto;left:50%;bottom:10px;transform:translateX(-50%);flex-direction:row;gap:10px;padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.10);box-shadow:0 12px 30px rgba(0,0,0,.08);backdrop-filter:blur(10px);}}.v13-touch-nav{display:none;}@media (hover:none) and (pointer:coarse){.v13-touch-nav{display:flex;flex-direction:column;gap:10px;position:absolute;right:12px;bottom:12px;z-index:3;padding:10px;border-radius:18px;background:rgba(255,255,255,.92);border:1px solid rgba(0,0,0,.10);box-shadow:0 12px 30px rgba(0,0,0,.10);backdrop-filter:blur(10px);}.v13-navbtn{width:44px;height:44px;border-radius:14px;border:1px solid rgba(0,0,0,.14);background:#fff;color:rgba(75,27,177,.95);display:grid;place-items:center;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;-webkit-tap-highlight-color:transparent;}.v13-navbtn svg{width:22px;height:22px;}.v13-navbtn:active{transform:translateY(1px);border-color:rgba(75,27,177,.55);box-shadow:0 10px 22px rgba(75,27,177,.18);}#v13-crown .v13-card{pointer-events:auto;}#v13-crown .v13-card .v13-btn{pointer-events:auto;}}</style> <script>(function(){const stack=document.getElementById('v13Stack');const cards=Array.from(stack.querySelectorAll('.v13-card'));const indicator=document.getElementById('v13Indicator');const touchNav=document.getElementById('v13TouchNav');const isTouch=window.matchMedia&&window.matchMedia('(hover: none) and (pointer: coarse)').matches;let target=0;let current=0;const maxIndex=cards.length - 1;let autoTimer=null;const AUTO_MS=5000;let lastUserTs=Date.now();function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+const dots=cards.map((_,i)=>{const d=document.createElement('div');d.className='v13-dot' +(i===0?' active':'');d.addEventListener('click',()=>{lastUserTs=Date.now();target=i;snapSoon();});indicator.appendChild(d);return d;});function render(){current+=(target - current)*0.08;const activeIndex=Math.round(current);dots.forEach((d,i)=>d.classList.toggle('active',i===activeIndex));cards.forEach((card,i)=>{const dist=i - current;const abs=Math.abs(dist);const opacity=clamp(1 - abs*0.33,0,1);const blur=abs*1.8;const scale=clamp(1 - abs*0.07,0.78,1);const rotateX=clamp(dist*11,-28,28);const step=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--v13-step'))||118;const translateY=dist*step;const translateZ=clamp(70 - abs*55,-140,70);card.style.opacity=opacity;card.style.filter=`blur(${blur}px)`;card.style.transform=`translate(-50%, -50%) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) scale(${scale})`;card.style.zIndex=String(1000 - Math.round(abs*10));card.classList.toggle('is-active',i===activeIndex);if(!isTouch){card.style.pointerEvents=(i===activeIndex)?'auto':'none';}});requestAnimationFrame(render);};if(!isTouch){let wheelAcc=0;stack.addEventListener('wheel',(e)=>{e.preventDefault();lastUserTs=Date.now();wheelAcc+=e.deltaY;const step=180;const move=wheelAcc/step;if(Math.abs(move)>=0.12){target=clamp(target + move,0,maxIndex);wheelAcc=0;snapSoon();}},{passive:false});let touchY=null;let touchLast=null;stack.addEventListener('touchstart',(e)=>{if(!e.touches||!e.touches[0]) return;lastUserTs=Date.now();touchY=e.touches[0].clientY;touchLast=touchY;cancelSnap();},{passive:true});stack.addEventListener('touchmove',(e)=>{if(!e.touches||!e.touches[0]||touchY===null) return;lastUserTs=Date.now();const y=e.touches[0].clientY;const dy=(touchLast - y);touchLast=y;target=clamp(target + dy/260,0,maxIndex);},{passive:true});stack.addEventListener('touchend',()=>{touchY=null;touchLast=null;snapSoon();},{passive:true});};if(isTouch&&touchNav){const btns=Array.from(touchNav.querySelectorAll('.v13-navbtn'));btns.forEach(btn=>{btn.addEventListener('click',()=>{lastUserTs=Date.now();const dir=parseInt(btn.getAttribute('data-dir'),10)||0;target=clamp(Math.round(target) + dir,0,maxIndex);snapSoon();});});stack.style.touchAction='none';}
+function startAuto(){stopAuto();autoTimer=setInterval(()=>{const idle=Date.now() - lastUserTs;if(idle<4000) return;target=(target>=maxIndex)?0:(target + 1);snapSoon();},AUTO_MS);}
+function stopAuto(){if(autoTimer){clearInterval(autoTimer);autoTimer=null;}}
+startAuto();cards.forEach((card,i)=>{const btn=card.querySelector('.v13-btn');if(!btn) return;btn.addEventListener('click',()=>{lastUserTs=Date.now();target=i;snapSoon();});});let snapT=null;function cancelSnap(){if(snapT){clearTimeout(snapT);snapT=null;}}
+function snapSoon(){cancelSnap();snapT=setTimeout(()=>{target=Math.round(target);},140);}
+render();})();</script> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('1750176351');});});</script> <!-- /T396 --> </div> <div id="rec1750110741" class="r t-rec" style=" " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec1750110741 .t396__artboard {height:100px;background-color:#ffffff;}#rec1750110741 .t396__filter {height:100px;}#rec1750110741 .t396__carrier{height:100px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec1750110741 .t396__artboard,#rec1750110741 .t396__filter,#rec1750110741 .t396__carrier {height:100px;}#rec1750110741 .t396__filter {}#rec1750110741 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:959px) {#rec1750110741 .t396__artboard,#rec1750110741 .t396__filter,#rec1750110741 .t396__carrier {height:100px;}#rec1750110741 .t396__filter {}#rec1750110741 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:639px) {#rec1750110741 .t396__artboard,#rec1750110741 .t396__filter,#rec1750110741 .t396__carrier {height:100px;}#rec1750110741 .t396__filter {}#rec1750110741 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:479px) {#rec1750110741 .t396__artboard,#rec1750110741 .t396__filter,#rec1750110741 .t396__carrier {height:100px;}#rec1750110741 .t396__filter {}#rec1750110741 .t396__carrier {background-attachment:scroll;}}#rec1750110741 .tn-elem[data-elem-id="1767051410228"]{z-index:3;top:46px;;left:calc(50% - 600px + -431px);;width:1900px;height:10px;}#rec1750110741 .tn-elem[data-elem-id="1767051410228"] .tn-atom{border-radius:0px 0px 0px 0px;background-color:#f0f0f0;background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1750110741 .tn-elem[data-elem-id="1767051410228"]{display:table;}}@media screen and (max-width:959px){#rec1750110741 .tn-elem[data-elem-id="1767051410228"]{display:table;}}@media screen and (max-width:639px){#rec1750110741 .tn-elem[data-elem-id="1767051410228"]{display:table;}}@media screen and (max-width:479px){#rec1750110741 .tn-elem[data-elem-id="1767051410228"]{display:table;}}</style> <div class='t396'> <div class="t396__artboard" data-artboard-recid="1750110741" data-artboard-screens="320,480,640,960,1200" data-artboard-height="100" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="100" data-artboard-height-res-480="100" data-artboard-height-res-640="100" data-artboard-height-res-960="100"> <div class="t396__carrier" data-artboard-recid="1750110741"></div> <div class="t396__filter" data-artboard-recid="1750110741"></div> <div class='t396__elem tn-elem tn-elem__17501107411767051410228' data-elem-id='1767051410228' data-elem-type='shape' data-field-top-value="46" data-field-left-value="-431" data-field-height-value="10" data-field-width-value="1900" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-widthmode-value="fixed"> <div class='tn-atom'> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('1750110741');});});</script> <!-- /T396 --> </div> <div id="rec1750117421" class="r t-rec" style=" " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec1750117421 .t396__artboard {height:550px;background-color:#ffffff;}#rec1750117421 .t396__filter {height:550px;}#rec1750117421 .t396__carrier{height:550px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec1750117421 .t396__artboard,#rec1750117421 .t396__filter,#rec1750117421 .t396__carrier {height:550px;}#rec1750117421 .t396__filter {}#rec1750117421 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:959px) {#rec1750117421 .t396__artboard,#rec1750117421 .t396__filter,#rec1750117421 .t396__carrier {height:900px;}#rec1750117421 .t396__filter {}#rec1750117421 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:639px) {#rec1750117421 .t396__artboard,#rec1750117421 .t396__filter,#rec1750117421 .t396__carrier {height:900px;}#rec1750117421 .t396__filter {}#rec1750117421 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:479px) {#rec1750117421 .t396__artboard,#rec1750117421 .t396__filter,#rec1750117421 .t396__carrier {height:800px;}#rec1750117421 .t396__filter {}#rec1750117421 .t396__carrier {background-attachment:scroll;}}#rec1750117421 .tn-elem[data-elem-id="1767051918964"]{z-index:3;top:0px;;left:calc(50% - 600px + 0px);;width:1200px;height:550px;}#rec1750117421 .tn-elem[data-elem-id="1767051918964"] .tn-atom{background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1750117421 .tn-elem[data-elem-id="1767051918964"]{display:table;width:960px;}}@media screen and (max-width:959px){#rec1750117421 .tn-elem[data-elem-id="1767051918964"]{display:table;top:99px;;width:640px;height:703px;}}@media screen and (max-width:639px){#rec1750117421 .tn-elem[data-elem-id="1767051918964"]{display:table;top:107px;;width:480px;height:686px;}}@media screen and (max-width:479px){#rec1750117421 .tn-elem[data-elem-id="1767051918964"]{display:table;top:18px;;width:320px;height:697px;}}</style> <div class='t396'> <div class="t396__artboard" data-artboard-recid="1750117421" data-artboard-screens="320,480,640,960,1200" data-artboard-height="550" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="800" data-artboard-height-res-480="900" data-artboard-height-res-640="900" data-artboard-height-res-960="550"> <div class="t396__carrier" data-artboard-recid="1750117421"></div> <div class="t396__filter" data-artboard-recid="1750117421"></div> <div class='t396__elem tn-elem tn-elem__17501174211767051918964' data-elem-id='1767051918964' data-elem-type='html' data-field-top-value="0" data-field-left-value="0" data-field-height-value="550" data-field-width-value="1200" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="18" data-field-height-res-320-value="697" data-field-width-res-320-value="320" data-field-top-res-480-value="107" data-field-height-res-480-value="686" data-field-width-res-480-value="480" data-field-top-res-640-value="99" data-field-height-res-640-value="703" data-field-width-res-640-value="640" data-field-width-res-960-value="960"> <div class='tn-atom tn-atom__html'> <!-- ===== VITON13 / Zero Block: News + Cards (Isolated + Responsive) ===== --> <div id="v13-news-1"> <div class="v13n-wrap"> <div class="v13n-head"> <div class="v13n-brand">VITON13</div> <div class="v13n-sub">Анонсы · Новости · События</div> </div> <div class="v13n-cards" role="list"> <!-- CARD 1 --> <article class="v13n-card" role="listitem"> <div class="v13n-card-inner"> <div class="v13n-card-top"> <div class="v13n-badge">Событие</div> <div class="v13n-title">Запуск VITON ID</div> <div class="v13n-desc">Единый аккаунт экосистемы, доступы, профиль и статус.</div> </div> <div class="v13n-card-bottom"> <a class="v13n-btn" href="#">Перейти</a> </div> </div> <div class="v13n-expand" aria-hidden="true"> <div class="v13n-expand-title">Запуск VITON ID</div> <div class="v13n-expand-desc">
+Здесь будет расширенное описание новости/события. Ты потом заменишь текст на свой.
+</div> <a class="v13n-btn v13n-btn-secondary" href="#">Перейти</a> </div> </article> <!-- CARD 2 --> <article class="v13n-card" role="listitem"> <div class="v13n-card-inner"> <div class="v13n-card-top"> <div class="v13n-badge">Новости</div> <div class="v13n-title">Old Money Коллекция</div> <div class="v13n-desc">Новая линейка одежды: минимализм, статус, качество.</div> </div> <div class="v13n-card-bottom"> <a class="v13n-btn" href="http://viton13.com/viton13oldmoney">Перейти</a> </div> </div> <div class="v13n-expand" aria-hidden="true"> <div class="v13n-expand-title">Old Money Коллекция</div> <div class="v13n-expand-desc">
+Расширенная информация о коллекции. Можно добавить дату, детали и ссылки.
+</div> <a class="v13n-btn v13n-btn-secondary" href="http://viton13.com/viton13oldmoney">Перейти</a> </div> </article> <!-- CARD 3 --> <article class="v13n-card" role="listitem"> <div class="v13n-card-inner"> <div class="v13n-card-top"> <div class="v13n-badge">Анонс</div> <div class="v13n-title">Образовательные инструменты</div> <div class="v13n-desc">Практика, навыки, материалы: всё внутри VITON13.</div> </div> <div class="v13n-card-bottom"> <a class="v13n-btn" href="#">Перейти</a> </div> </div> <div class="v13n-expand" aria-hidden="true"> <div class="v13n-expand-title">Образовательные инструменты</div> <div class="v13n-expand-desc">
+Тут будет описание раздела/ивента. Текст легко меняется прямо в HTML.
+</div> <a class="v13n-btn v13n-btn-secondary" href="#">Перейти</a> </div> </article> </div> </div> <div class="v13n-backdrop" id="v13nBackdrop-1" aria-hidden="true"></div> </div> <style>#v13-news-1{--v13-black:#0b0b0f;--v13-white:#ffffff;--v13-text:#0b0b0f;--v13-border:rgba(11,11,15,.16);--v13-border-strong:rgba(43,15,95,.45);--v13-purple:#2b0f5f;--v13-purple-2:#4b1bb1;--v13-shadow:0 18px 40px rgba(11,11,15,.12);width:100%;background:var(--v13-white);color:var(--v13-text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;position:relative;overflow:hidden;}#v13-news-1 .v13n-wrap{max-width:1200px;margin:0 auto;padding:56px 16px 70px;}#v13-news-1 .v13n-head{text-align:center;margin-bottom:28px;}#v13-news-1 .v13n-brand{font-weight:800;letter-spacing:.06em;font-size:clamp(22px,2.6vw,34px);}#v13-news-1 .v13n-sub{margin-top:8px;font-size:clamp(12px,1.4vw,14px);opacity:.72;}#v13-news-1 .v13n-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch;}#v13-news-1 .v13n-card{background:#fff;border:1px solid var(--v13-border);border-radius:18px;box-shadow:0 10px 24px rgba(11,11,15,.06);position:relative;overflow:hidden;cursor:pointer;transform:translateZ(0);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}#v13-news-1 .v13n-card:hover{transform:translateY(-3px);box-shadow:var(--v13-shadow);border-color:var(--v13-border-strong);}#v13-news-1 .v13n-card:before{content:"";position:absolute;inset:-2px;background:radial-gradient(120% 80% at 20% 0%,rgba(75,27,177,.16),transparent 55%),radial-gradient(120% 80% at 80% 0%,rgba(43,15,95,.10),transparent 60%);opacity:.55;pointer-events:none;}#v13-news-1 .v13n-card-inner{position:relative;padding:18px 18px 16px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;}#v13-news-1 .v13n-badge{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--v13-purple);}#v13-news-1 .v13n-title{margin-top:8px;font-size:18px;font-weight:800;color:var(--v13-text);}#v13-news-1 .v13n-desc{margin-top:8px;font-size:13px;line-height:1.5;opacity:.78;}#v13-news-1 .v13n-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 16px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:800;letter-spacing:.02em;color:#fff !important;background:linear-gradient(110deg,var(--v13-purple),var(--v13-purple-2),var(--v13-purple));background-size:240% 100%;border:1px solid rgba(75,27,177,.35);box-shadow:0 10px 18px rgba(43,15,95,.16);position:relative;overflow:hidden;animation:v13nShimmer 2.6s ease-in-out infinite;}@keyframes v13nShimmer{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}#v13-news-1 .v13n-btn:active{transform:translateY(1px);}#v13-news-1 .v13n-btn-secondary{margin-top:14px;}#v13-news-1 .v13n-expand{position:absolute;left:0;right:0;bottom:0;transform:translateY(110%);opacity:0;pointer-events:none;background:#fff;border-top:1px solid rgba(11,11,15,.10);padding:16px 18px 18px;transition:transform .35s cubic-bezier(.2,.9,.2,1),opacity .25s ease;}#v13-news-1 .v13n-expand-title{font-size:16px;font-weight:900;color:var(--v13-text);}#v13-news-1 .v13n-expand-desc{margin-top:8px;font-size:13px;line-height:1.55;opacity:.8;}#v13-news-1 .v13n-card.is-open{border-color:rgba(75,27,177,.55);box-shadow:0 22px 50px rgba(11,11,15,.14);transform:translateY(-2px) scale(1.02);z-index:5;}#v13-news-1 .v13n-card.is-open .v13n-expand{transform:translateY(0%);opacity:1;pointer-events:auto;}#v13-news-1 .v13n-card.is-open .v13n-card-inner{padding-bottom:10px;}#v13-news-1 .v13n-backdrop{position:fixed;inset:0;background:rgba(11,11,15,.10);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:4;}#v13-news-1 .v13n-backdrop.is-on{opacity:1;pointer-events:auto;}@media (max-width:1024px){#v13-news-1 .v13n-wrap{padding:46px 16px 60px;}#v13-news-1 .v13n-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}@media (max-width:720px){#v13-news-1 .v13n-wrap{padding:38px 14px 52px;}#v13-news-1 .v13n-cards{grid-template-columns:1fr;gap:14px;}#v13-news-1 .v13n-card-inner{min-height:165px;padding:16px 16px 14px;}#v13-news-1 .v13n-title{font-size:17px;}#v13-news-1 .v13n-desc{font-size:13px;}}@media (max-width:920px) and (orientation:landscape){#v13-news-1 .v13n-wrap{padding:28px 14px 40px;}#v13-news-1 .v13n-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}#v13-news-1 .v13n-card-inner{min-height:155px;}}@media (min-width:1025px) and (max-width:1280px){#v13-news-1 .v13n-wrap{padding:52px 16px 64px;}}@media (hover:none){#v13-news-1 .v13n-card:hover{transform:none;box-shadow:0 10px 24px rgba(11,11,15,.06);}}</style> <script>(function(){const root=document.getElementById('v13-news-1');if(!root) return;const cards=Array.from(root.querySelectorAll('.v13n-card'));const backdrop=root.querySelector('#v13nBackdrop-1');function closeAll(){cards.forEach(c=>c.classList.remove('is-open'));if(backdrop) backdrop.classList.remove('is-on');}
+cards.forEach(card=>{const btns=card.querySelectorAll('a');btns.forEach(b=>b.addEventListener('click',(e)=>e.stopPropagation()));card.addEventListener('click',()=>{const isOpen=card.classList.contains('is-open');closeAll();if(!isOpen){card.classList.add('is-open');if(backdrop) backdrop.classList.add('is-on');}});});if(backdrop){backdrop.addEventListener('click',closeAll);}
+document.addEventListener('keydown',(e)=>{if(e.key==='Escape') closeAll();});})();</script> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('1750117421');});});</script> <!-- /T396 --> </div> <div id="rec1749907811" class="r t-rec" style=" " data-animationappear="off" data-record-type="396"> <!-- T396 --> <style>#rec1749907811 .t396__artboard {height:910px;background-color:#ffffff;}#rec1749907811 .t396__filter {height:910px;}#rec1749907811 .t396__carrier{height:910px;background-position:center center;background-attachment:scroll;background-size:cover;background-repeat:no-repeat;}@media screen and (max-width:1199px) {#rec1749907811 .t396__artboard,#rec1749907811 .t396__filter,#rec1749907811 .t396__carrier {height:1300px;}#rec1749907811 .t396__filter {}#rec1749907811 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:959px) {#rec1749907811 .t396__artboard,#rec1749907811 .t396__filter,#rec1749907811 .t396__carrier {height:1300px;}#rec1749907811 .t396__filter {}#rec1749907811 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:639px) {#rec1749907811 .t396__artboard,#rec1749907811 .t396__filter,#rec1749907811 .t396__carrier {height:1300px;}#rec1749907811 .t396__filter {}#rec1749907811 .t396__carrier {background-attachment:scroll;}}@media screen and (max-width:479px) {#rec1749907811 .t396__artboard,#rec1749907811 .t396__filter,#rec1749907811 .t396__carrier {height:1300px;}#rec1749907811 .t396__filter {}#rec1749907811 .t396__carrier {background-attachment:scroll;}}#rec1749907811 .tn-elem[data-elem-id="1767044880137"]{z-index:3;top:93px;;left:calc(50% - 600px + 0px);;width:1200px;height:550px;}#rec1749907811 .tn-elem[data-elem-id="1767044880137"] .tn-atom{background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1749907811 .tn-elem[data-elem-id="1767044880137"]{display:table;top:190px;;left:calc(50% - 480px + -120px);;height:943px;}}@media screen and (max-width:959px){#rec1749907811 .tn-elem[data-elem-id="1767044880137"]{display:table;top:185px;;left:calc(50% - 320px + -280px);;height:956px;}}@media screen and (max-width:639px){#rec1749907811 .tn-elem[data-elem-id="1767044880137"]{display:table;top:43px;;left:calc(50% - 240px + -21px);;width:529px;height:1149px;}}@media screen and (max-width:479px){#rec1749907811 .tn-elem[data-elem-id="1767044880137"]{display:table;top:26px;;left:calc(50% - 160px + -26px);;width:377px;height:1146px;}}#rec1749907811 .tn-elem[data-elem-id="1767051979452"]{z-index:3;top:0px;;left:calc(50% - 600px + -411px);;width:1900px;height:10px;}#rec1749907811 .tn-elem[data-elem-id="1767051979452"] .tn-atom{border-radius:0px 0px 0px 0px;background-color:#f0f0f0;background-position:center center;border-width:var(--t396-borderwidth,0);border-style:var(--t396-borderstyle,solid);border-color:var(--t396-bordercolor,transparent);transition:background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;}@media screen and (max-width:1199px){#rec1749907811 .tn-elem[data-elem-id="1767051979452"]{display:table;}}@media screen and (max-width:959px){#rec1749907811 .tn-elem[data-elem-id="1767051979452"]{display:table;}}@media screen and (max-width:639px){#rec1749907811 .tn-elem[data-elem-id="1767051979452"]{display:table;}}@media screen and (max-width:479px){#rec1749907811 .tn-elem[data-elem-id="1767051979452"]{display:table;}}</style> <div class='t396'> <div class="t396__artboard" data-artboard-recid="1749907811" data-artboard-screens="320,480,640,960,1200" data-artboard-height="910" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="1300" data-artboard-height-res-480="1300" data-artboard-height-res-640="1300" data-artboard-height-res-960="1300"> <div class="t396__carrier" data-artboard-recid="1749907811"></div> <div class="t396__filter" data-artboard-recid="1749907811"></div> <div class='t396__elem tn-elem tn-elem__17499078111767044880137' data-elem-id='1767044880137' data-elem-type='html' data-field-top-value="93" data-field-left-value="0" data-field-height-value="550" data-field-width-value="1200" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="26" data-field-left-res-320-value="-26" data-field-height-res-320-value="1146" data-field-width-res-320-value="377" data-field-top-res-480-value="43" data-field-left-res-480-value="-21" data-field-height-res-480-value="1149" data-field-width-res-480-value="529" data-field-top-res-640-value="185" data-field-left-res-640-value="-280" data-field-height-res-640-value="956" data-field-top-res-960-value="190" data-field-left-res-960-value="-120" data-field-height-res-960-value="943"> <div class='tn-atom tn-atom__html'> <!-- VITON13 — Zero Block: STATUS BAND V13 (Apple-like) --> <section id="v13-statusband"> <div class="v13-wrap"> <div class="v13-top"> <h2 class="v13-title" data-split="true">Инновационное изобретение</h2> <p class="v13-sub">STATUS BAND V13 — технология, которая упрощает живую социализацию.</p> </div> <div class="v13-grid"> <!-- TEXT --> <div class="v13-text"> <div class="v13-kicker">VITON13 · Inventions</div> <h3 class="v13-h3">STATUS BAND V13</h3> <p class="v13-p">
+В современном мире людям всё сложнее считывать друг друга вживую: статус отношений не всегда понятен,
+а коммуникация всё чаще уходит в интернет. Исследования в социальной психологии показывают,
+что у многих снижается навык «живого» знакомства — появляется страх отказа, неловкость и риск
+нарушить личные границы другого человека.
+</p> <p class="v13-p"> <b>Status Band</b> решает это просто и красиво: браслет отображает понятный статус с помощью цвета.
+В спортзалах, клубах, на мероприятиях и конференциях — один взгляд даёт контекст:
+человек открыт к знакомству или предпочитает дистанцию. Это снижает тревожность,
+экономит время, делает общение уважительным и честным с первых секунд.
+</p> <ul class="v13-list"> <li><span class="dot"></span>Сигнал статуса — без слов и неловкости</li> <li><span class="dot"></span>Уважение к границам: меньше «неуместных» подходов</li> <li><span class="dot"></span>Больше живых знакомств там, где люди реально встречаются</li> </ul> <a class="v13-more" href="#statusband-more">
+Узнать больше <span class="arrow">›</span> </a> </div> <!-- IMAGE --> <div class="v13-media"> <div class="v13-imgWrap" id="v13-imgWrap"> <img
+class="v13-img"
+id="v13-img"
+src="images/tild6566-6663-4965-b165-646330386239__chatgpt_image_29__20.png"
+alt="STATUS BAND V13"
+loading="lazy"
+/> </div> </div> </div> </div> </section> <style>:root{--v13-bg:#ffffff;--v13-text:#0b0b0f;--v13-muted:rgba(11,11,15,.62);--v13-line:rgba(11,11,15,.10);--v13-accent:#2b0f5f;--v13-accent2:#4b1bb1;}#v13-statusband{background:var(--v13-bg);color:var(--v13-text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;width:100%;overflow:hidden;}.v13-wrap{max-width:1200px;margin:0 auto;padding:56px 16px 72px;}.v13-top{text-align:center;margin-bottom:34px;}.v13-title{margin:0;font-size:44px;line-height:1.05;letter-spacing:-.02em;font-weight:800;display:inline-block;perspective:900px;transform-style:preserve-3d;}.v13-title .ch{display:inline-block;transform-style:preserve-3d;will-change:transform,filter;color:var(--v13-text);text-shadow:0 1px 0 rgba(0,0,0,.08),0 8px 30px rgba(43,15,95,.12);animation:v13Float 2.8s ease-in-out infinite;}.v13-title .ch.ac{color:var(--v13-text);text-shadow:0 1px 0 rgba(0,0,0,.10),0 10px 34px rgba(75,27,177,.16),0 0 18px rgba(75,27,177,.12);}@keyframes v13Float{0%,100%{transform:translateZ(0) translateY(0) rotateX(0deg) rotateY(0deg);filter:saturate(1);}50%{transform:translateZ(18px) translateY(-3px) rotateX(6deg) rotateY(-6deg);filter:saturate(1.06);}}.v13-sub{margin:12px auto 0;max-width:720px;font-size:14px;line-height:1.6;color:var(--v13-muted);}.v13-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;margin-top:22px;}.v13-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(43,15,95,.78);font-weight:700;margin-bottom:12px;}.v13-h3{margin:0 0 14px;font-size:34px;line-height:1.1;letter-spacing:-.02em;font-weight:850;}.v13-p{margin:0 0 12px;font-size:15px;line-height:1.7;color:rgba(11,11,15,.82);}.v13-list{list-style:none;padding:0;margin:16px 0 18px;display:flex;flex-direction:column;gap:10px;}.v13-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.55;color:rgba(11,11,15,.78);}.dot{width:8px;height:8px;border-radius:99px;margin-top:6px;background:linear-gradient(180deg,var(--v13-accent2),var(--v13-accent));box-shadow:0 6px 18px rgba(75,27,177,.22);flex:0 0 auto;}.v13-more{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:650;color:rgba(75,27,177,.95) !important;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(75,27,177,.55) !important;width:fit-content;}.v13-more .arrow{display:inline-block;transform:translateY(-1px);transition:transform .25s ease;color:rgba(75,27,177,.95) !important;}.v13-more:hover{border-bottom-color:rgba(75,27,177,.95) !important;color:#4b1bb1 !important;}.v13-more:hover .arrow{transform:translate(3px,-1px);}.v13-media{display:flex;justify-content:center;}.v13-imgWrap{width:min(440px,100%);aspect-ratio:1 / 1;border-radius:24px;background:#fff;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.06);transform-style:preserve-3d;will-change:transform;transition:transform 180ms ease;}.v13-img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);will-change:transform;transition:transform 180ms ease;}@media (max-width:980px){.v13-title{font-size:38px;}.v13-grid{grid-template-columns:1fr;}.v13-media{order:-1;}.v13-imgWrap{width:min(520px,100%);}}@media (max-width:560px){.v13-wrap{padding:44px 14px 56px;}.v13-title{font-size:30px;}.v13-h3{font-size:28px;}.v13-sub{font-size:13px;}}</style> <script>(function(){const t=document.querySelector('#v13-statusband .v13-title[data-split="true"]');if(!t) return;const text=t.textContent.trim();t.textContent='';Array.from(text).forEach((c,i)=>{const s=document.createElement('span');s.className='ch' +((i%7===0)?' ac':'');s.style.animationDelay=(i*0.035) + 's';s.textContent=(c===' ')?'\u00A0':c;t.appendChild(s);});})();(function(){const wrap=document.getElementById('v13-imgWrap');const img=document.getElementById('v13-img');if(!wrap||!img) return;const isFinePointer=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;if(!isFinePointer) return;function onMove(e){const r=wrap.getBoundingClientRect();const x=(e.clientX - r.left)/r.width;const y=(e.clientY - r.top)/r.height;const rx=(0.5 - y)*10;const ry=(x - 0.5)*12;const scale=1.10;wrap.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;img.style.transform=`scale(${scale})`;}
+function onLeave(){wrap.style.transform='perspective(900px) rotateX(0deg) rotateY(0deg)';img.style.transform='scale(1.02)';}
+wrap.addEventListener('mousemove',onMove);wrap.addEventListener('mouseleave',onLeave);})();</script> </div> </div> <div class='t396__elem tn-elem tn-elem__17499078111767051979452' data-elem-id='1767051979452' data-elem-type='shape' data-field-top-value="0" data-field-left-value="-411" data-field-height-value="10" data-field-width-value="1900" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-widthmode-value="fixed" data-field-heightmode-value="fixed"> <div class='tn-atom'> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('1749907811');});});</script> <!-- /T396 --> </div> <!--footer--> <footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="17774146" data-tilda-page-id="107628816" data-tilda-page-alias="footer" data-tilda-formskey="e9ff48f84f843ba50039e3ca17774146" data-tilda-cookie="no" data-tilda-imgoptimoff="yes" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-country="RU"> <div id="rec1767485401" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- ================= VITON13 FOOTER (PC PERFECT + MOBILE FIX / MULTI-INSTANCE SAFE) ================= --> <footer class="v13-footer" data-v13-footer> <div class="v13-footer-inner"> <!-- ================== DESKTOP GRID (ПК НЕ ТРОГАЕМ) ================== --> <div class="v13-footer-grid" data-v13-grid> <!-- 1 --> <div class="v13-footer-col"> <h4>Покупайте и учитесь</h4> <a href="#">Магазин</a> <a href="http://viton13.com/viton13oldmoney">Old Money магазин одежды</a> <a href="http://viton13.com/sportv13">Спортивный магазин одежды</a> <a href="#">Дизайнерский магазин одежды</a> <h4 class="v13-footer-spacer">VITON Wallet</h4> <a href="#">Кошелёк</a> <a href="#">VITON Pay</a> <a href="#">VITON Cash</a> </div> <!-- 2 --> <div class="v13-footer-col"> <h4>Учётная запись</h4> <a href="#">Управление аккаунтом VITON</a> <a href="#">VITON ID</a> <a href="#">VITON Store</a> <h4 class="v13-footer-spacer">Развлечения</h4> <a href="#">Музыка</a> <a href="#">VIOR7</a> <a href="#">VIORA13</a> </div> <!-- 3 --> <div class="v13-footer-col"> <h4>VITON Store</h4> <a href="#">Найти магазин</a> <a href="http://viton13.com/helpviton13">Поддержка</a> <a href="#">Статус заказа</a> <a href="http://viton13.com/helpviton13">Помощь в покупке</a> <a href="#">Финансирование</a> </div> <!-- 4 --> <div class="v13-footer-col"> <h4>Для бизнеса</h4> <a href="#">VITON для бизнеса</a> <h4 class="v13-footer-spacer">Для образования</h4> <a href="http://viton13.com/viton13education">Центр образование</a> <a href="#">Научные открытия</a> <h4 class="v13-footer-spacer">Для правительства</h4> <a href="#">Проекты и партнёрства</a> </div> <!-- 5 --> <div class="v13-footer-col"> <h4>Ценности VITON13</h4> <a href="#">Конфиденциальность</a> <a href="#">Доступность</a> <a href="#">Окружающая среда</a> <h4 class="v13-footer-spacer">О VITON13</h4> <a href="#">Новости</a> <a href="#">Руководство</a> <a href="#">Инвесторы</a> <a href="#">Этика и соответствие</a> <a href="#">Контакты</a> </div> </div> <!-- ================== MOBILE ACCORDION (статический, без ID) ================== --> <div class="v13-footer-accordion" data-v13-acc aria-label="Навигация подвала"> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Покупайте и учитесь</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Магазин</a> <a href="http://viton13.com/viton13oldmoney">Old Money магазин одежды</a> <a href="http://viton13.com/sportv13">Спортивный магазин одежды</a> <a href="#">Дизайнерский магазин одежды</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">VITON Wallet</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Кошелёк</a> <a href="#">VITON Pay</a> <a href="#">VITON Cash</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Учётная запись</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Управление аккаунтом VITON</a> <a href="#">VITON ID</a> <a href="#">VITON Store</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Развлечения</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Музыка</a> <a href="#">VIOR7</a> <a href="#">VIORA13</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">VITON Store</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Найти магазин</a> <a href="http://viton13.com/helpviton13">Поддержка</a> <a href="#">Статус заказа</a> <a href="http://viton13.com/helpviton13">Помощь в покупке</a> <a href="#">Финансирование</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Для бизнеса</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">VITON для бизнеса</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Для образования</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="http://viton13.com/viton13education">Центр образование</a> <a href="#">Научные открытия</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Для правительства</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Проекты и партнёрства</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">Ценности VITON13</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Конфиденциальность</a> <a href="#">Доступность</a> <a href="#">Окружающая среда</a> </div> </div> </div> <div class="v13-acc-item"> <button class="v13-acc-btn" type="button" aria-expanded="false"> <span class="v13-acc-title">О VITON13</span> <span class="v13-acc-icon" aria-hidden="true">⌄</span> </button> <div class="v13-acc-panel" aria-hidden="true"> <div class="v13-acc-links"> <a href="#">Новости</a> <a href="#">Руководство</a> <a href="#">Инвесторы</a> <a href="#">Этика и соответствие</a> <a href="#">Контакты</a> </div> </div> </div> </div> <div class="v13-footer-callout">
+      Другие способы совершения покупок: найдите ближайший магазин или напишите нам. <br class="v13-footer-br">
+      Или позвоните по номеру: <a href="tel:+79811078251">+7 981 107 82 51</a>.
+    </div> <div class="v13-footer-hr"></div> <div class="v13-footer-bottom"> <div class="v13-footer-copy">Авторские права © <span data-v13-year></span> VITON13 Inc. Все права защищены.</div> <div class="v13-footer-links"> <a href="http://viton13.com/politicalinfo">Политика конфиденциальности</a> <span class="v13-dot">•</span> <a href="#">Условия использования</a> <span class="v13-dot">•</span> <a href="http://viton13.com/salehelp">Продажи и возврат средств</a> <span class="v13-dot">•</span> <a href="http://viton13.com/laywerinfo">Юридическая информация</a> <span class="v13-dot">•</span> <a href="#">Карта сайта</a> </div> <div class="v13-footer-locale">Россия</div> </div> </div> </footer> <style>
+:root{
+  --v13-footer-bg:#0b0b0f;
+  --v13-accent:#2b0f5f;
+  --v13-accent-2:#4b1bb1;
+}
+
+.v13-footer,
+.v13-footer *{
+  color:#fff !important;
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.v13-footer{
+  background: var(--v13-footer-bg) !important;
+  border-top: 1px solid rgba(255,255,255,.10);
+  position: relative;
+  overflow: hidden;
+}
+
+.v13-footer:before{
+  content:"";
+  position:absolute;
+  inset:-200px -200px auto auto;
+  width:520px;height:520px;
+  background: radial-gradient(circle, rgba(75,27,177,.18), rgba(43,15,95,.06), transparent 70%);
+  pointer-events:none;
+}
+.v13-footer:after{
+  content:"";
+  position:absolute;
+  inset:auto auto -260px -260px;
+  width:620px;height:620px;
+  background: radial-gradient(circle, rgba(43,15,95,.14), transparent 68%);
+  pointer-events:none;
+}
+
+.v13-footer .v13-footer-inner{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 28px 16px 22px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ПК GRID */
+.v13-footer .v13-footer-grid{
+  display:grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.v13-footer .v13-footer-col h4{
+  margin:0 0 10px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.v13-footer .v13-footer-col a{
+  display:block;
+  font-size:12px;
+  line-height:1.65;
+  text-decoration:none;
+  margin:0 0 6px;
+  opacity:.86;
+}
+.v13-footer .v13-footer-col a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(75,27,177,.9);
+  opacity: 1;
+}
+.v13-footer .v13-footer-spacer{ margin-top:18px; }
+
+/* callout / bottom */
+.v13-footer .v13-footer-callout{
+  margin-top:18px;
+  font-size:12px;
+  line-height:1.6;
+  opacity:.86;
+}
+.v13-footer .v13-footer-callout a{
+  text-decoration:none;
+  border-bottom: 1px solid rgba(75,27,177,.75);
+}
+.v13-footer .v13-footer-hr{
+  margin:16px 0 14px;
+  height:1px;
+  background: rgba(255,255,255,.12);
+}
+.v13-footer .v13-footer-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.v13-footer .v13-footer-copy{ font-size:12px; opacity:.70; }
+.v13-footer .v13-footer-links{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.v13-footer .v13-footer-links a{
+  font-size:12px;
+  text-decoration:none;
+  opacity:.86;
+}
+.v13-footer .v13-footer-links a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(75,27,177,.9);
+  opacity:1;
+}
+.v13-footer .v13-dot{ color: rgba(255,255,255,.35) !important; }
+.v13-footer .v13-footer-locale{ font-size:12px; opacity:.86; }
+
+/* MOBILE ACCORDION */
+.v13-footer .v13-footer-accordion{ display:none; }
+
+.v13-footer .v13-acc-item{
+  position:relative;
+  border-top: 1px solid rgba(255,255,255,.14);
+}
+
+.v13-footer .v13-acc-btn{
+  position:relative;
+  z-index:3;                 /* ✅ важно */
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding: 14px 0;
+  background:transparent;
+  border:0;
+  cursor:pointer;
+  text-align:left;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.01em;
+  touch-action: manipulation;
+}
+
+.v13-footer .v13-acc-icon{
+  width:18px;
+  flex:0 0 18px;
+  opacity:.9;
+  transform: rotate(0deg);
+  transition: transform .18s ease;
+  font-size:16px;
+  line-height:1;
+  text-align:center;
+}
+
+.v13-footer .v13-acc-panel{
+  position:relative;
+  z-index:2;
+  max-height:0;
+  overflow:hidden;
+  transition: max-height .22s ease;
+}
+
+.v13-footer .v13-acc-links{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding: 2px 0 14px;
+}
+
+.v13-footer .v13-acc-links a{
+  font-size:13px;
+  text-decoration:none;
+  opacity:.86;
+}
+
+.v13-footer .v13-acc-links a:hover{
+  opacity:1;
+  text-decoration: underline;
+  text-decoration-color: rgba(75,27,177,.9);
+}
+
+.v13-footer .v13-acc-item.is-open .v13-acc-icon{
+  transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width:1200px){
+  .v13-footer .v13-footer-grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width:820px){
+  /* ✅ Скрываем grid максимально жёстко, чтобы он НЕ принимал клики в Тильде */
+  .v13-footer [data-v13-grid]{
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    overflow:hidden !important;
+    pointer-events:none !important;
+  }
+
+  .v13-footer .v13-footer-accordion{ display:block; }
+  .v13-footer .v13-footer-inner{ padding: 18px 16px 18px; }
+  .v13-footer .v13-footer-callout{ margin-top: 14px; }
+}
+@media (max-width:520px){
+  .v13-footer .v13-footer-br{ display:none; }
+}
+</style> <script>
+(function(){
+  // ✅ Инициализируем КАЖДЫЙ футер отдельно (если Тильда дублирует блоки — всё равно будет работать правильно)
+  var footers = document.querySelectorAll('[data-v13-footer]');
+  if(!footers.length) return;
+
+  footers.forEach(function(footer){
+    // year (в каждом футере свой)
+    var y = footer.querySelector('[data-v13-year]');
+    if(y) y.textContent = new Date().getFullYear();
+
+    var acc = footer.querySelector('[data-v13-acc]');
+    if(!acc) return;
+
+    // ✅ один обработчик на футер: открываем ТОЛЬКО то, на что нажали (внутри этого футера)
+    acc.addEventListener('click', function(e){
+      var btn = e.target.closest('.v13-acc-btn');
+      if(!btn || !acc.contains(btn)) return;
+
+      e.preventDefault();
+
+      var item = btn.closest('.v13-acc-item');
+      if(!item) return;
+
+      var panel = item.querySelector('.v13-acc-panel');
+      if(!panel) return;
+
+      var isOpen = item.classList.contains('is-open');
+
+      if(isOpen){
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded','false');
+        panel.setAttribute('aria-hidden','true');
+        panel.style.maxHeight = '0px';
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded','true');
+        panel.setAttribute('aria-hidden','false');
+
+        panel.style.maxHeight = '0px';
+        requestAnimationFrame(function(){
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        });
+      }
+    });
+
+    // ресайз/поворот — пересчитать высоты открытых в ЭТОМ футере
+    function fixHeights(){
+      var openPanels = footer.querySelectorAll('.v13-acc-item.is-open .v13-acc-panel');
+      openPanels.forEach(function(p){
+        p.style.maxHeight = p.scrollHeight + 'px';
+      });
+    }
+    window.addEventListener('resize', fixHeights);
+    window.addEventListener('orientationchange', fixHeights);
+  });
+})();
+</script> <!-- ================= /VITON13 FOOTER ================= --> <!-- nominify end --> </div> </div> </div> </div> </footer> <!--/footer--> </div> <!--/allrecords-->
