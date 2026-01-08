@@ -312,23 +312,272 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Character counter
-        document.querySelector('textarea[name="essay"]')?.addEventListener('input', function() {
-            document.getElementById('charCount').textContent = this.value.length;
-        });
+        // Form validation configuration
+        const FormValidation = {
+            MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB
+            ALLOWED_FILE_TYPES: ['image/jpeg', 'image/png', 'image/webp'],
+            MIN_ESSAY_LENGTH: 700,
+            EMAIL_REGEX: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            PHONE_REGEX: /^[\d\s\-+()]+$/
+        };
 
-        // Form submission
-        document.getElementById('applicationForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            document.querySelector('.edu-form-step').style.display = 'none';
-            document.getElementById('formSuccess').style.display = 'block';
-        });
+        // Character counter with error handling
+        try {
+            const essayTextarea = document.querySelector('textarea[name="essay"]');
+            const charCountEl = document.getElementById('charCount');
+
+            if (essayTextarea && charCountEl) {
+                essayTextarea.addEventListener('input', function() {
+                    try {
+                        charCountEl.textContent = this.value.length;
+                        // Visual feedback for minimum length
+                        if (this.value.length >= FormValidation.MIN_ESSAY_LENGTH) {
+                            charCountEl.style.color = '#27ae60';
+                        } else {
+                            charCountEl.style.color = '';
+                        }
+                    } catch (error) {
+                        console.error('[VITON13] Error updating character count:', error.message);
+                    }
+                });
+            }
+        } catch (error) {
+            console.error('[VITON13] Error setting up character counter:', error.message);
+        }
+
+        // Form validation helper functions
+        function validateEmail(email) {
+            if (!email || typeof email !== 'string') return false;
+            return FormValidation.EMAIL_REGEX.test(email.trim());
+        }
+
+        function validatePhone(phone) {
+            if (!phone || typeof phone !== 'string') return false;
+            const cleaned = phone.trim();
+            return cleaned.length >= 7 && FormValidation.PHONE_REGEX.test(cleaned);
+        }
+
+        function validateFile(file) {
+            if (!file) return { valid: false, error: 'Файл не выбран / No file selected' };
+
+            if (file.size > FormValidation.MAX_FILE_SIZE) {
+                return { valid: false, error: 'Файл слишком большой (максимум 10MB) / File too large (max 10MB)' };
+            }
+
+            if (!FormValidation.ALLOWED_FILE_TYPES.includes(file.type)) {
+                return { valid: false, error: 'Неверный формат файла (только JPG/PNG/WebP) / Invalid file format (JPG/PNG/WebP only)' };
+            }
+
+            return { valid: true };
+        }
+
+        function showFieldError(field, message) {
+            try {
+                field.classList.add('error');
+                let errorEl = field.parentElement.querySelector('.field-error');
+                if (!errorEl) {
+                    errorEl = document.createElement('span');
+                    errorEl.className = 'field-error';
+                    errorEl.style.cssText = 'color:#e74c3c;font-size:12px;display:block;margin-top:4px;';
+                    field.parentElement.appendChild(errorEl);
+                }
+                errorEl.textContent = message;
+            } catch (error) {
+                console.error('[VITON13] Error showing field error:', error.message);
+            }
+        }
+
+        function clearFieldError(field) {
+            try {
+                field.classList.remove('error');
+                const errorEl = field.parentElement.querySelector('.field-error');
+                if (errorEl) errorEl.remove();
+            } catch (error) {
+                console.error('[VITON13] Error clearing field error:', error.message);
+            }
+        }
+
+        function clearAllErrors(form) {
+            try {
+                form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+                form.querySelectorAll('.field-error').forEach(el => el.remove());
+            } catch (error) {
+                console.error('[VITON13] Error clearing form errors:', error.message);
+            }
+        }
+
+        // Form submission with validation
+        try {
+            const applicationForm = document.getElementById('applicationForm');
+
+            if (applicationForm) {
+                applicationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    try {
+                        clearAllErrors(this);
+                        let isValid = true;
+                        const errors = [];
+
+                        // Validate first name
+                        const firstName = this.querySelector('input[name="firstName"]');
+                        if (firstName && !firstName.value.trim()) {
+                            showFieldError(firstName, 'Обязательное поле / Required field');
+                            isValid = false;
+                            errors.push('firstName');
+                        } else if (firstName) {
+                            clearFieldError(firstName);
+                        }
+
+                        // Validate last name
+                        const lastName = this.querySelector('input[name="lastName"]');
+                        if (lastName && !lastName.value.trim()) {
+                            showFieldError(lastName, 'Обязательное поле / Required field');
+                            isValid = false;
+                            errors.push('lastName');
+                        } else if (lastName) {
+                            clearFieldError(lastName);
+                        }
+
+                        // Validate phone
+                        const phone = this.querySelector('input[name="phone"]');
+                        if (phone) {
+                            if (!phone.value.trim()) {
+                                showFieldError(phone, 'Обязательное поле / Required field');
+                                isValid = false;
+                                errors.push('phone');
+                            } else if (!validatePhone(phone.value)) {
+                                showFieldError(phone, 'Неверный формат телефона / Invalid phone format');
+                                isValid = false;
+                                errors.push('phone');
+                            } else {
+                                clearFieldError(phone);
+                            }
+                        }
+
+                        // Validate email
+                        const email = this.querySelector('input[name="email"]');
+                        if (email) {
+                            if (!email.value.trim()) {
+                                showFieldError(email, 'Обязательное поле / Required field');
+                                isValid = false;
+                                errors.push('email');
+                            } else if (!validateEmail(email.value)) {
+                                showFieldError(email, 'Неверный формат email / Invalid email format');
+                                isValid = false;
+                                errors.push('email');
+                            } else {
+                                clearFieldError(email);
+                            }
+                        }
+
+                        // Validate photo file
+                        const photoInput = this.querySelector('input[name="photo"]');
+                        if (photoInput && photoInput.files.length > 0) {
+                            const fileValidation = validateFile(photoInput.files[0]);
+                            if (!fileValidation.valid) {
+                                showFieldError(photoInput, fileValidation.error);
+                                isValid = false;
+                                errors.push('photo');
+                            } else {
+                                clearFieldError(photoInput);
+                            }
+                        } else if (photoInput && photoInput.required) {
+                            showFieldError(photoInput, 'Фото обязательно / Photo is required');
+                            isValid = false;
+                            errors.push('photo');
+                        }
+
+                        // Validate essay length
+                        const essay = this.querySelector('textarea[name="essay"]');
+                        if (essay) {
+                            if (!essay.value.trim()) {
+                                showFieldError(essay, 'Обязательное поле / Required field');
+                                isValid = false;
+                                errors.push('essay');
+                            } else if (essay.value.length < FormValidation.MIN_ESSAY_LENGTH) {
+                                showFieldError(essay, `Минимум ${FormValidation.MIN_ESSAY_LENGTH} символов / Minimum ${FormValidation.MIN_ESSAY_LENGTH} characters`);
+                                isValid = false;
+                                errors.push('essay');
+                            } else {
+                                clearFieldError(essay);
+                            }
+                        }
+
+                        // Validate required checkboxes
+                        const requiredCheckboxes = this.querySelectorAll('input[type="checkbox"][required]');
+                        requiredCheckboxes.forEach(checkbox => {
+                            if (!checkbox.checked) {
+                                showFieldError(checkbox, 'Необходимо подтвердить / Confirmation required');
+                                isValid = false;
+                                errors.push(checkbox.id || 'checkbox');
+                            } else {
+                                clearFieldError(checkbox);
+                            }
+                        });
+
+                        // Validate interview date (must be in future)
+                        const interviewDate = this.querySelector('input[name="interviewDate"]');
+                        if (interviewDate && interviewDate.value) {
+                            const selectedDate = new Date(interviewDate.value);
+                            const today = new Date();
+                            today.setHours(0, 0, 0, 0);
+                            if (selectedDate < today) {
+                                showFieldError(interviewDate, 'Дата должна быть в будущем / Date must be in the future');
+                                isValid = false;
+                                errors.push('interviewDate');
+                            } else {
+                                clearFieldError(interviewDate);
+                            }
+                        }
+
+                        if (!isValid) {
+                            console.warn('[VITON13] Form validation failed:', errors);
+                            // Scroll to first error
+                            const firstError = this.querySelector('.error');
+                            if (firstError) {
+                                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }
+                            return;
+                        }
+
+                        // Form is valid - show success
+                        console.log('[VITON13] Form validation passed, submitting...');
+                        const formStep = document.querySelector('.edu-form-step');
+                        const formSuccess = document.getElementById('formSuccess');
+
+                        if (formStep) formStep.style.display = 'none';
+                        if (formSuccess) formSuccess.style.display = 'block';
+
+                    } catch (error) {
+                        console.error('[VITON13] Error during form validation:', error.message);
+                        alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте снова. / An error occurred. Please try again.');
+                    }
+                });
+            }
+        } catch (error) {
+            console.error('[VITON13] Error setting up form submission:', error.message);
+        }
 
         function resetForm() {
-            document.getElementById('applicationForm').reset();
-            document.getElementById('charCount').textContent = '0';
-            document.querySelector('.edu-form-step').style.display = 'block';
-            document.getElementById('formSuccess').style.display = 'none';
+            try {
+                const form = document.getElementById('applicationForm');
+                const charCount = document.getElementById('charCount');
+                const formStep = document.querySelector('.edu-form-step');
+                const formSuccess = document.getElementById('formSuccess');
+
+                if (form) {
+                    form.reset();
+                    clearAllErrors(form);
+                }
+                if (charCount) charCount.textContent = '0';
+                if (formStep) formStep.style.display = 'block';
+                if (formSuccess) formSuccess.style.display = 'none';
+
+                console.log('[VITON13] Form reset successfully');
+            } catch (error) {
+                console.error('[VITON13] Error resetting form:', error.message);
+            }
         }
     </script>
 </body>
